@@ -14,6 +14,7 @@ const index = () => {
               class="w-full absolute h-full object-cover overflow-hidden"
               layout="fill"
               src={me.src}
+              alt="Bojan's image"
             />
           </div>
           <div className="w-52 h-52 absolute border-2 border-x-transparent border-accent rotate-45 rounded-full circle-animation"></div>

@@ -25,6 +25,7 @@ const index = () => {
               className="group-hover:scale-125 transition-all duration-500"
               src={slika1.src}
               layout="fill"
+              alt="gis project"
             />
             <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-40">
               <span className="text-gradient">UI/UX Design</span>
@@ -45,6 +46,7 @@ const index = () => {
               className="group-hover:scale-125 transition-all duration-500"
               src={slika2.src}
               layout="fill"
+              alt="skondra portfolio"
             />
             <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-40">
               <span className="text-gradient">UI/UX Design</span>
@@ -63,6 +65,7 @@ const index = () => {
               className="group-hover:scale-125 transition-all duration-500"
               src={slika2.src}
               layout="fill"
+              alt="sezonac project"
             />
             <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-40">
               <span className="text-gradient">UI/UX Design</span>
