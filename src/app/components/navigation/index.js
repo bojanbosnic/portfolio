@@ -5,7 +5,6 @@ import { AiFillHome } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { BsTelephone, BsFillTelephoneFill } from "react-icons/bs";
-import About from "../about/index";
 const Index = () => {
   const [proba, setProba] = useState(false);
   const navHoverFun = () => {
@@ -20,7 +19,6 @@ const Index = () => {
           </li>
           <li className="my-4 text-primary">
             <FaUser fontSize={22} />
-            <Link href="/products">About</Link>
           </li>
           <li className="my-4 text-primary">
             <MdWork fontSize={22} />
