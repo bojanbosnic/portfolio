@@ -12,10 +12,19 @@ module.exports = {
         sm: "2rem",
         lg: "4rem",
         xl: "5rem",
-        "2xl": "6rem",
+        "2xl": "10rem",
       },
     },
+    fontFamily: {
+      primary: "var(--display-font)", // Set Orbitron as the primary font
+      secondary: "var(--heading-font)", // Set Orbitron as the primary font
+      tertiary: "var(--treci-font)", // Set Orbitron as the primary font
+    },
     extend: {
+      colors: {
+        primary: "#0a0a0a",
+        accent: "#B809C3",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
