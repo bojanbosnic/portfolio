@@ -36,7 +36,7 @@ export default function Home() {
               viewport={{ once: false, amount: 0.7 }}
               className="font-bold leading-[0.8]"
             >
-              I'm <span className="text-accent">Ben</span> Aiden
+              I'm <span className="text-accent">Bojan</span> Bosnic
             </motion.h1>
             <motion.p
               variants={fadeIn("up", 0.4)}
