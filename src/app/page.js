@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import About from "./components/about/index";
+import Skills from "@/app/components/skills/index";
 import Projects from "./components/projects/index";
 import Contact from "./components/contact/index";
 import { TypeAnimation } from "react-type-animation";
@@ -33,7 +34,7 @@ export default function Home() {
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="font-bold leading-[0.8]"
             >
               I'm <span className="text-accent">Bojan</span> Bosnic
@@ -42,18 +43,18 @@ export default function Home() {
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="max-w-2xl	text-[#bfbfc0]"
             >
-              This is Bojan Bosnic , Web Developer who lives in Gradiska, Bosnia
-              and Herzegovina. I'm creative and diligent, looking for working
-              around globe.
+              Lorem ipsum is Bojan Bosnic , Web Developer who lives in Gradiska,
+              Bosnia and Herzegovina. I'm creative and diligent, looking for
+              working around globe.
             </motion.p>
             <motion.button
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               type="button"
               class="btn btn-lg"
             >
@@ -63,6 +64,7 @@ export default function Home() {
         </main>
       </div>
       <About />
+      <Skills />
       <Projects />
       <Contact />
     </>

@@ -15,8 +15,11 @@ h2 {
 h3 {
   @apply font-tertiary uppercase text-accent font-light text-4xl  my-8;
 }
+h4 {
+  @apply font-tertiary uppercase text-accent font-light text-2xl  my-8;
+}
 p {
-  @apply font-medium my-8;
+  @apply font-semibold my-8;
 }
 
 input {

@@ -5,11 +5,13 @@ import { AiFillHome } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { BsTelephone, BsFillTelephoneFill } from "react-icons/bs";
+
 const Index = () => {
   const [proba, setProba] = useState(false);
   const navHoverFun = () => {
     setProba(true);
   };
+
   return (
     <div className="fixed right-4">
       <nav className="px-3 my-4 border-none border-white bg-[#ffffff1f] rounded-3xl items-center z-40">
@@ -29,7 +31,6 @@ const Index = () => {
             {/* <Link href="/contact">Contact</Link> */}
           </li>
         </ul>
-        <button className="border-3 border-white m-3 bg-transparent cursor-pointer h-9 md:relative  z-30 block  md:hidden"></button>
       </nav>
     </div>
   );

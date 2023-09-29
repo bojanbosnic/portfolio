@@ -3,12 +3,20 @@ import React from "react";
 import slika1 from "../../../../assets/img/portfolio-img1.png";
 import slika2 from "../../../../assets/img/portfolio-img2.png";
 import slika3 from "../../../../assets/img/portfolio-img3.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/app/animations";
 
 const index = () => {
   return (
     <div className="flex flex-col my-44 gap-16">
       <div className="flex gap-16">
-        <div className="w-1/2">
+        <motion.div
+          variants={fadeIn("right", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="w-1/2"
+        >
           <h3>My latest work</h3>
           <p className="max-w-xs font-drugi">
             {" "}
@@ -17,9 +25,15 @@ const index = () => {
             headings hierarchy, web responsiveness, web accessibility, code W3C
             validation, and optimization.
           </p>
-        </div>
+        </motion.div>
         {/* da */}
-        <div class="group relative border-2 rounded-xl border-white/50 w-1/2 overflow-hidden bg-cover bg-no-repeat">
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          class="group relative border-2 rounded-xl h-full border-white/50 w-1/2 overflow-hidden bg-cover bg-no-repeat"
+        >
           <div class="relative w-full border rounded-xl h-80 border-cyan-50 overflow-hidden bg-cover bg-no-repeat">
             <Image
               className="group-hover:scale-125 transition-all duration-500"
@@ -37,10 +51,16 @@ const index = () => {
               <div class="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
           </div>{" "}
-        </div>{" "}
+        </motion.div>{" "}
       </div>
       <div className="flex justify-between gap-16">
-        <div className="group relative border-2 rounded-xl border-white/50 w-1/2 overflow-hidden bg-cover bg-no-repeat">
+        <motion.div
+          variants={fadeIn("right", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="group relative border-2 rounded-xl border-white/50 w-1/2 overflow-hidden bg-cover bg-no-repeat"
+        >
           <div class="relative w-full border rounded-xl h-80 border-cyan-50 overflow-hidden bg-cover bg-no-repeat">
             <Image
               className="group-hover:scale-125 transition-all duration-500"
@@ -58,8 +78,14 @@ const index = () => {
               <div class="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden  bg-fixed opacity transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
           </div>{" "}
-        </div>
-        <div className="group relative border-2 rounded-xl border-white/50 w-1/2 overflow-hidden bg-cover bg-no-repeat">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="group relative border-2 rounded-xl border-white/50 w-1/2 overflow-hidden bg-cover bg-no-repeat"
+        >
           <div class="relative w-full border rounded-xl h-80 border-cyan-50 overflow-hidden bg-cover bg-no-repeat">
             <Image
               className="group-hover:scale-125 transition-all duration-500"
@@ -77,7 +103,7 @@ const index = () => {
               <div class="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden  bg-fixed opacity transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
           </div>{" "}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
