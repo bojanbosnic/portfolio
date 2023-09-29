@@ -16,7 +16,7 @@ export default function Home() {
         <main className="flex justify-between items-center">
           <div className="">
             <motion.h1
-              variants={fadeIn("up", 0.3)}
+              variants={fadeIn("up", 0.1)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
@@ -25,7 +25,7 @@ export default function Home() {
               I'm <span className="text-accent">Bojan</span> Bosnic
             </motion.h1>
             <motion.p
-              variants={fadeIn("up", 0.4)}
+              variants={fadeIn("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
@@ -36,7 +36,7 @@ export default function Home() {
               working around globe.
             </motion.p>
             <motion.button
-              variants={fadeIn("up", 0.5)}
+              variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
@@ -46,14 +46,19 @@ export default function Home() {
               Work With Me{" "}
             </motion.button>
           </div>
-          <div>
+          <motion.div
+            variants={fadeIn("left", 0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
+          >
             <Image
               className="myself_animation"
               src={myself.src}
               width={400}
               height={400}
             />
-          </div>
+          </motion.div>
         </main>
       </div>
       <About />
