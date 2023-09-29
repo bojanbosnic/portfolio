@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { BsTelephone, BsFillTelephoneFill } from "react-icons/bs";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -25,11 +26,34 @@ const index = () => {
         viewport={{ once: true, amount: 0.7 }}
         className="flex items-center"
       >
-        <HiOutlineMail fontSize={20} className="mr-4" />
-        <FaFacebookF className="mr-4" />
-        <BsFillTelephoneFill className="mr-4" />
-        <BsTelephone className="mr-4" />
-        <FaLinkedinIn fontSize={20} className="mr-4" />
+        <a
+          href="mailto:bojan.bosnicc99@gmail.com"
+          className="mr-4 hover:text-accent transition-all ease-in-out"
+        >
+          <HiOutlineMail fontSize={20} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/bojan-bosnic1204/"
+          target="_blank"
+          rel="noreferrer"
+          className="mr-4 hover:text-accent transition-all ease-in-out"
+        >
+          <FaFacebookF />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/bojan-bosnic1204/"
+          target="_blank"
+          rel="noreferrer"
+          className="mr-4 hover:text-accent transition-all ease-in-out"
+        >
+          <FaLinkedinIn fontSize={20} />
+        </a>
+        <a
+          href="tel:+38765165388"
+          className="mr-4 hover:text-accent transition-all ease-in-out"
+        >
+          <BsFillTelephoneFill />
+        </a>
       </motion.div>
     </div>
   );

@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 
 const index = () => {
   return (
-    <div className="flex justify-between items-center gap-20 my-44">
+    <div
+      id="contact"
+      className="flex justify-between items-center gap-20 my-44"
+    >
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"

@@ -3,33 +3,18 @@ import Image from "next/image";
 import About from "./components/about/index";
 import Skills from "@/app/components/skills/index";
 import Projects from "./components/projects/index";
-import Contact from "./components/contact/index";
+import Contact from "./components/contact/page";
 import { TypeAnimation } from "react-type-animation";
 import { fadeIn } from "./animations";
 import { motion } from "framer-motion";
+import myself from "../../assets/img/bojan.png";
 
 export default function Home() {
   return (
     <>
       <div className="my-44">
-        <main className="">
-          <TypeAnimation
-            sequence={[
-              "Hello", // Types 'One'
-              1000, // Waits 1s
-              "Bello", // Deletes 'One' and types 'Two'
-              2000, // Waits 2s
-              () => {
-                console.log("Sequence completed");
-              },
-            ]}
-            wrapper="span"
-            cursor={true}
-            repeat={Infinity}
-            style={{ fontSize: "2em", display: "inline-block" }}
-          />
+        <main className="flex justify-between items-center">
           <div className="">
-            {/* <span className="my-20">-Hello</span> */}
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
@@ -60,6 +45,14 @@ export default function Home() {
             >
               Work With Me{" "}
             </motion.button>
+          </div>
+          <div>
+            <Image
+              className="myself_animation"
+              src={myself.src}
+              width={400}
+              height={400}
+            />
           </div>
         </main>
       </div>

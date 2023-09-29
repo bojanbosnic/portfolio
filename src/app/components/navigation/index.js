@@ -5,6 +5,7 @@ import { AiFillHome } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { BsTelephone, BsFillTelephoneFill } from "react-icons/bs";
+import contact from "@/app/components/contact/page";
 
 const Index = () => {
   const [proba, setProba] = useState(false);
@@ -13,11 +14,13 @@ const Index = () => {
   };
 
   return (
-    <div className="fixed right-4">
+    <div className="fixed top-1/3	 right-4">
       <nav className="px-3 my-4 border-none border-white bg-[#ffffff1f] rounded-3xl items-center z-40">
         <ul className="flex flex-col justify-center p-0 items-center list-none ">
           <li className="my-4 text-primary">
-            <AiFillHome fontSize={22} onMouseEnter={navHoverFun} />
+            <a href="#contact">
+              <AiFillHome fontSize={22} onMouseEnter={navHoverFun} />
+            </a>
           </li>
           <li className="my-4 text-primary">
             <FaUser fontSize={22} />
