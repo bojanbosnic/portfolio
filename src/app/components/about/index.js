@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import "./about_style.css";
 import React from "react";

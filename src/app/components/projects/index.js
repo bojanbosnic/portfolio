@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import slika1 from "../../../../assets/img/portfolio-img1.png";
