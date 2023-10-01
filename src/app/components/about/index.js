@@ -9,7 +9,7 @@ import { fadeIn } from "@/app/animations";
 const index = () => {
   return (
     <>
-      <div className="flex justify-center items-center flex-col">
+      <div className="container flex justify-center items-center flex-col">
         <motion.h3
           variants={fadeIn("up", 0.2)}
           initial="hidden"

@@ -9,14 +9,14 @@ import { fadeIn } from "@/app/animations";
 
 const index = () => {
   return (
-    <div className="flex flex-col my-44 gap-16">
-      <div className="flex gap-16">
+    <div className="container flex flex-col my-44 gap-16">
+      <div className="flex flex-wrap md:flex-nowrap gap-16">
         <motion.div
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.7 }}
-          className="w-1/2"
+          className="w-full md:w-1/2"
         >
           <h3>My latest work</h3>
           <p className="max-w-xs font-drugi">
@@ -27,17 +27,16 @@ const index = () => {
             validation, and optimization.
           </p>
         </motion.div>
-        {/* da */}
         <motion.div
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.7 }}
-          class="group relative border-2 rounded-xl h-full border-white/50 w-1/2 overflow-hidden bg-cover bg-no-repeat"
+          class="w-full group relative border-2 rounded-xl h-full border-white/50 overflow-hidden bg-cover bg-no-repeat  md:w-1/2"
         >
-          <div class="relative w-full border rounded-xl h-80 border-cyan-50 overflow-hidden bg-cover bg-no-repeat">
+          <div class="relative border rounded-xl h-80 border-cyan-50 overflow-hidden bg-cover bg-no-repeat">
             <Image
-              className="group-hover:scale-125 transition-all duration-500"
+              className="group-hover:scale-125 transition-all duration-500 cover"
               src={slika1.src}
               layout="fill"
               alt="gis project"
@@ -54,13 +53,13 @@ const index = () => {
           </div>{" "}
         </motion.div>{" "}
       </div>
-      <div className="flex justify-between gap-16">
+      <div className="flex flex-wrap justify-center md:flex-nowrap md:justify-between gap-16">
         <motion.div
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.7 }}
-          className="group relative border-2 rounded-xl border-white/50 w-1/2 overflow-hidden bg-cover bg-no-repeat"
+          className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat"
         >
           <div class="relative w-full border rounded-xl h-80 border-cyan-50 overflow-hidden bg-cover bg-no-repeat">
             <Image
@@ -85,7 +84,7 @@ const index = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.7 }}
-          className="group relative border-2 rounded-xl border-white/50 w-1/2 overflow-hidden bg-cover bg-no-repeat"
+          className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat"
         >
           <div class="relative w-full border rounded-xl h-80 border-cyan-50 overflow-hidden bg-cover bg-no-repeat">
             <Image

@@ -21,11 +21,9 @@ const Index = () => {
           </li>
           <li className="my-4 text-primary">
             <MdWork fontSize={22} />
-            {/* <Link href="/about">Service</Link> */}
           </li>
           <li className="my-4 text-primary">
             <BsFillTelephoneFill fontSize={22} />
-            {/* <Link href="/contact">Contact</Link> */}
           </li>
         </ul>
       </nav>

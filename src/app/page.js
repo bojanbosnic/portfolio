@@ -12,15 +12,14 @@ import myself from "../../assets/img/bojan.png";
 export default function Home() {
   return (
     <>
-      <div className="my-44">
-        <main className="flex justify-between items-center">
+      <div className="container my-44">
+        <main className="flex flex-wrap justify-center md:flex-nowrap md:justify-between md:items-center">
           <div className="">
             <motion.h1
               variants={fadeIn("up", 0.1)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
-              className="font-bold leading-[0.8]"
             >
               I'm <span className="text-accent">Bojan</span> Bosnic
             </motion.h1>
@@ -51,6 +50,7 @@ export default function Home() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
+            className="mt-16 md:mt-0"
           >
             <Image
               className="myself_animation"
@@ -62,7 +62,7 @@ export default function Home() {
         </main>
       </div>
       <About />
-      <Skills />
+      {/* <Skills /> */}
       <Projects />
       <Contact />
     </>

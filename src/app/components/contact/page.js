@@ -7,14 +7,14 @@ const index = () => {
   return (
     <div
       id="contact"
-      className="flex justify-between items-center gap-20 my-44"
+      className="container flex flex-wrap justify-between items-center gap-20 my-44 md:flex-nowrap"
     >
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.7 }}
-        className="w-1/2"
+        className="w-full md:w-1/2"
       >
         <span className="uppercase">Get In Touch</span>
         <h1 className="font-drugi max-w-xs">Let's work together!</h1>
@@ -24,7 +24,7 @@ const index = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.7 }}
-        className="w-1/2"
+        className="w-full md:w-1/2"
       >
         <form className="z-10 flex  px-4 flex-col outline-0 py-15  bg-transparent border border-cyan-100 rounded-lg md:mt-0">
           <div className="my-6">
@@ -70,7 +70,10 @@ const index = () => {
               <label htmlFor="msg_id"></label>
             </div>
           </div>
-          <button type="submit" className="w-1/3 pointer btn btn-sm my-8">
+          <button
+            type="submit"
+            className="w-1/3 pointer btn btn-lg md:btn-sm my-8"
+          >
             Pošalji poruku
           </button>
         </form>

@@ -15,11 +15,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${orbitron.variable} ${rajdhani.variable} ${aldrich.variable}`}
     >
-      <body className={`container bg-image`}>
+      <body className={`bg-image`}>
         <Contact />
         <Navigation />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

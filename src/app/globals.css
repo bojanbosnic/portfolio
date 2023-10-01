@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  @apply font-secondary font-black text-6xl mb-6 tracking-[10%] uppercase;
+  @apply font-secondary font-bold leading-[0.8] text-6xl mb-6 tracking-[10%] uppercase;
 }
 h2 {
   @apply font-primary uppercase font-medium text-[26px] mb-6 leading-[46px];
