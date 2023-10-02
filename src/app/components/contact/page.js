@@ -70,10 +70,7 @@ const index = () => {
               <label htmlFor="msg_id"></label>
             </div>
           </div>
-          <button
-            type="submit"
-            className="w-1/3 pointer btn btn-lg md:btn-sm my-8"
-          >
+          <button type="submit" className="w-1/3 pointer btn btn-sm my-8">
             Pošalji poruku
           </button>
         </form>
