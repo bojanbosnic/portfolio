@@ -21,8 +21,8 @@ const index = () => {
         </div>
         <div className="flex justify-between items-center">
           <div className="flex flex-wrap justify-center items-center gap-16">
-            {skills.map((skill) => (
-              <div className="items-center">
+            {skills.map((skill, i) => (
+              <div className="items-center" key={i}>
                 <span>{skill.src}</span>
               </div>
             ))}
