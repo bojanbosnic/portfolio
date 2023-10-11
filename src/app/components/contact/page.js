@@ -7,7 +7,7 @@ const index = () => {
   return (
     <div
       id="contact"
-      className="container flex flex-wrap justify-between items-center gap-20 my-44 md:flex-nowrap"
+      className="container flex flex-wrap justify-between items-center gap-20 my-24 md:my-44 md:flex-nowrap"
     >
       <motion.div
         variants={fadeIn("right", 0.2)}
@@ -16,8 +16,10 @@ const index = () => {
         viewport={{ once: true, amount: 0.7 }}
         className="w-full md:w-1/2"
       >
-        <span className="uppercase">Get In Touch</span>
-        <h1 className="font-drugi max-w-xs">Let's work together!</h1>
+        <h3 className="uppercase">Get In Touch</h3>
+        <span className="text-6xl max-w-xs block font-medium">
+          Let's work together!
+        </span>
       </motion.div>
       <motion.div
         variants={fadeIn("left", 0.2)}

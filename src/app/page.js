@@ -12,7 +12,7 @@ import myself from "../../assets/img/bojan.png";
 export default function Home() {
   return (
     <>
-      <div className="container my-44">
+      <div className="container my-24 md:my-44">
         <main className="flex flex-wrap justify-center md:flex-nowrap md:justify-between md:items-center">
           <div className="">
             <motion.h1
@@ -40,7 +40,7 @@ export default function Home() {
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
               type="button"
-              class="btn btn-lg"
+              class="w-full btn btn-lg sm:w-4/12	"
             >
               Work With Me{" "}
             </motion.button>

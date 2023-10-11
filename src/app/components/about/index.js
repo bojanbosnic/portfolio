@@ -23,7 +23,7 @@ const index = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.7 }}
-          className="flex items-center justify-center mt-14"
+          className="flex items-center justify-center  my-7 md:my-14"
         >
           <div className="relative overflow-hidden border-2 rounded-full border-accent w-48 h-48 ">
             <Image
@@ -40,7 +40,7 @@ const index = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.7 }}
-          className="text-3xl font-semibold mt-6"
+          className="text-3xl font-semibold  text-center"
         >
           Frontend Developer!
         </motion.h4>
@@ -49,7 +49,7 @@ const index = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.7 }}
-          className="max-w-2xl text-center"
+          className="max-w-2xl text-center mt-0"
         >
           My job is to take care not to be penalized by the Google algorithm and
           by users too. I fix the broken UX/UI principles, semantic HTML,

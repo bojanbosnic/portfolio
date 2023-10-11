@@ -1,0 +1,9 @@
+.bg_img {
+  &:hover {
+    transform: scale(1.25);
+  }
+  transition: all;
+  transition-duration: 500ms;
+  background-size: cover;
+  background-image: url("../../../../assets/img/portfolio-img1.png");
+}

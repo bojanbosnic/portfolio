@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import "./projects_style.scss";
 import slika1 from "../../../../assets/img/portfolio-img1.png";
 import slika2 from "../../../../assets/img/portfolio-img2.png";
 import slika3 from "../../../../assets/img/portfolio-img3.png";
@@ -9,8 +10,8 @@ import { fadeIn } from "@/app/animations";
 
 const index = () => {
   return (
-    <div className="container flex flex-col my-44 gap-16">
-      <div className="flex flex-wrap md:flex-nowrap gap-16">
+    <div className="container flex flex-col my-24 gap-8 md:my-44 md:gap-16">
+      <div className="flex flex-wrap md:flex-nowrap gap-8 md:gap-16">
         <motion.div
           variants={fadeIn("right", 0.4)}
           initial="hidden"
@@ -19,8 +20,7 @@ const index = () => {
           className="w-full md:w-1/2"
         >
           <h3>My latest work</h3>
-          <p className="max-w-xs font-drugi">
-            {" "}
+          <p className="max-w-xs">
             My job is to take care not to be penalized by the Google algorithm
             and by users too. I fix the broken UX/UI principles, semantic HTML,
             headings hierarchy, web responsiveness, web accessibility, code W3C
@@ -34,13 +34,7 @@ const index = () => {
           viewport={{ once: true, amount: 0.7 }}
           class="w-full group relative border-2 rounded-xl h-full border-white/50 overflow-hidden bg-cover bg-no-repeat  md:w-1/2"
         >
-          <div class="relative border rounded-xl h-80 border-cyan-50 overflow-hidden bg-cover bg-no-repeat">
-            <Image
-              className="group-hover:scale-125 transition-all duration-500 cover"
-              src={slika1.src}
-              layout="fill"
-              alt="gis project"
-            />
+          <div class="relative bg_img border rounded-xl h-80 border-cyan-50 overflow-hidden bg-cover bg-no-repeat">
             <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-40">
               <span className="text-gradient">UI/UX Design</span>
             </div>
