@@ -9,7 +9,7 @@ import { fadeIn } from "../../animations";
 
 const index = () => {
   return (
-    <div className="container flex justify-between items-center mt-10 mb-24">
+    <div className="container mx-auto flex justify-between items-center mt-10 mb-24">
       <motion.div
         variants={fadeIn("right", 0.3)}
         initial="hidden"

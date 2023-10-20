@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Link from "react-scroll";
+import { Link } from "react-scroll";
 import { AiFillHome } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
@@ -8,22 +8,59 @@ import { BsTelephone, BsFillTelephoneFill } from "react-icons/bs";
 
 const Index = () => {
   return (
-    <div className="fixed top-1/3	 right-4">
-      <nav className="px-3 my-4 border-none border-white bg-[#ffffff1f] rounded-3xl items-center z-40">
+    <div className="fixed bottom-6 top-0 right-1/2 md:bottom-0 md:top-1/3	 md:right-4">
+      <nav className="px-3.5 my-4 border-none border-white bg-[#ffffff1f] rounded-3xl items-center z-40">
         <ul className="flex flex-col justify-center p-0 items-center list-none ">
-          <li className="my-4 text-primary">
-            <a href="#contact">
+          <li className="my-6 text-white/50">
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              activeClass="active"
+              className="cursor-pointer "
+            >
               <AiFillHome fontSize={22} />
-            </a>
+            </Link>
           </li>
-          <li className="my-4 text-primary">
-            <FaUser fontSize={22} />
+          <li className="my-6 text-white/50">
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              duration={100}
+              activeClass="active"
+              className="cursor-pointer "
+            >
+              <FaUser fontSize={22} />
+            </Link>
           </li>
-          <li className="my-4 text-primary">
-            <MdWork fontSize={22} />
+          <li className="my-6 text-white/50">
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={100}
+              activeClass="active"
+              className="cursor-pointer "
+            >
+              <MdWork fontSize={22} />
+            </Link>
           </li>
-          <li className="my-4 text-primary">
-            <BsFillTelephoneFill fontSize={22} />
+          <li className="my-6 text-white/50">
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={100}
+              activeClass="active"
+              className="cursor-pointer "
+            >
+              <BsFillTelephoneFill fontSize={22} />
+            </Link>
           </li>
         </ul>
       </nav>

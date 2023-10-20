@@ -12,9 +12,10 @@ import myself from "../../assets/img/bojan.png";
 export default function Home() {
   return (
     <>
-      <div className="container my-24 md:my-44">
+      <div id="home" className="container my-24 md:my-44">
         <main className="flex flex-wrap justify-center md:flex-nowrap md:justify-between md:items-center">
           <div className="">
+            <span>Hello there!</span>
             <motion.h1
               variants={fadeIn("up", 0.1)}
               initial="hidden"
@@ -27,12 +28,13 @@ export default function Home() {
               variants={fadeIn("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: true, amount: 0.7 }}
-              className="max-w-2xl	text-[#bfbfc0]"
+              viewport={{ once: false, amount: 0.7 }}
+              className="max-w-xl	text-[#bfbfc0]"
             >
-              Lorem ipsum is Bojan Bosnic , Web Developer who lives in Gradiska,
-              Bosnia and Herzegovina. I'm creative and diligent, looking for
-              working around globe.
+              "Hello! I'm Bojan Bosnic, a Web Developer from Gradiska, Bosnia. I
+              bring creativity and dedication to web development, aiming to make
+              a global impact. Welcome to my digital space, where where code
+              meets creativity!"
             </motion.p>
             <motion.button
               variants={fadeIn("up", 0.3)}
@@ -42,11 +44,11 @@ export default function Home() {
               type="button"
               class="w-full btn btn-lg sm:w-4/12	"
             >
-              Work With Me{" "}
+              Download CV{" "}
             </motion.button>
           </div>
           <motion.div
-            variants={fadeIn("left", 0.1)}
+            variants={fadeIn("down", 0.1)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
