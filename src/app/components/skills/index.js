@@ -13,7 +13,13 @@ const index = () => {
   return (
     <div className="container mx-auto my-24 md:my-44">
       <div className="flex flex-wrap gap-10 justify-center md:flex-nowrap md:justify-between">
-        <div className="w-full md:w-1/2">
+        <motion.div
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="w-full md:w-1/2"
+        >
           <h3>Skills</h3>
           <h4>Every Day is a New Challenge</h4>
           <p className="max-w-xl">
@@ -22,7 +28,7 @@ const index = () => {
             optimal performance, I'm ready to bring your projects to life using
             these cutting-edge technologies."
           </p>
-        </div>
+        </motion.div>
 
         <div className="w-full md:w-1/2 skills">
           <div class="each html">

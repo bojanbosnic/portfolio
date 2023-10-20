@@ -8,10 +8,10 @@ import { BsTelephone, BsFillTelephoneFill } from "react-icons/bs";
 
 const Index = () => {
   return (
-    <div className="fixed bottom-6 top-0 right-1/2 md:bottom-0 md:top-1/3	 md:right-4">
+    <div className="fixed w-full md:w-14 bottom-2 right-0 md:bottom-0 md:top-1/3 	 md:right-4">
       <nav className="px-3.5 my-4 border-none border-white bg-[#ffffff1f] rounded-3xl items-center z-40">
-        <ul className="flex flex-col justify-center p-0 items-center list-none ">
-          <li className="my-6 text-white/50">
+        <ul className="flex flex-row md:flex-col justify-center p-0 items-center list-none ">
+          <li className="mx-6 md:mx-0 my-6 text-white/50">
             <Link
               to="home"
               spy={true}
@@ -23,7 +23,7 @@ const Index = () => {
               <AiFillHome fontSize={22} />
             </Link>
           </li>
-          <li className="my-6 text-white/50">
+          <li className="mx-6 md:mx-0 my-6 text-white/50">
             <Link
               to="about"
               spy={true}
@@ -36,7 +36,7 @@ const Index = () => {
               <FaUser fontSize={22} />
             </Link>
           </li>
-          <li className="my-6 text-white/50">
+          <li className="mx-6 md:mx-0 my-6 text-white/50">
             <Link
               to="projects"
               spy={true}
@@ -49,7 +49,7 @@ const Index = () => {
               <MdWork fontSize={22} />
             </Link>
           </li>
-          <li className="my-6 text-white/50">
+          <li className="mx-6 md:mx-0 my-6 text-white/50">
             <Link
               to="contact"
               spy={true}

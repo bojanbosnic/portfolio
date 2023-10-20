@@ -7,7 +7,7 @@ import { HiOutlineMail } from "react-icons/hi";
 const index = () => {
   return (
     <footer className="container mx-auto mt-32 border-t">
-      <div className="flex justify-between mt-8">
+      <div className="flex justify-between flex-wrap mt-8">
         <div>
           <span>
             I usually work on several projects but I’ll be happy to discuss new
