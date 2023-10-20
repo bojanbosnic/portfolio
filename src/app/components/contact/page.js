@@ -24,7 +24,7 @@ const index = () => {
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.7 }}
+        viewport={{ once: false, amount: 0.7 }}
         className="w-full md:w-1/2"
       >
         <h3 className="uppercase">Get In Touch</h3>
@@ -36,7 +36,7 @@ const index = () => {
         variants={fadeIn("left", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.7 }}
+        viewport={{ once: false, amount: 0.7 }}
         className="w-full md:w-1/2"
       >
         <form className="z-10 flex  px-4 flex-col outline-0 pb-8 pt-4  bg-transparent border border-cyan-100 rounded-lg md:mt-0">

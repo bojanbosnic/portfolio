@@ -16,7 +16,7 @@ const index = () => {
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.7 }}
           className="w-full md:w-1/2"
         >
           <h3>My latest work</h3>
@@ -31,7 +31,7 @@ const index = () => {
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.7 }}
           class="w-full group relative border-2 rounded-xl h-full border-white/50 overflow-hidden bg-cover bg-no-repeat  md:w-1/2"
         >
           <div class="relative bg_img  rounded-xl h-80  overflow-hidden bg-cover bg-no-repeat">
@@ -52,7 +52,7 @@ const index = () => {
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.7 }}
           className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat"
         >
           <div class="relative bg_img  rounded-xl h-80  overflow-hidden bg-cover bg-no-repeat">
@@ -74,7 +74,7 @@ const index = () => {
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.7 }}
           className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat"
         >
           <div class="relative bg_img  rounded-xl h-80  overflow-hidden bg-cover bg-no-repeat">

@@ -17,7 +17,7 @@ const index = () => {
           variants={fadeIn("down", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.7 }}
         >
           About Me
         </motion.h3>
@@ -25,7 +25,7 @@ const index = () => {
           variants={fadeIn("down", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.7 }}
           className="flex items-center justify-center  my-7 md:my-14"
         >
           <div className="relative overflow-hidden border-2 rounded-full border-accent w-48 h-48 ">
@@ -42,7 +42,7 @@ const index = () => {
           variants={fadeIn("up", 0.5)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.7 }}
           className="text-3xl font-semibold  text-center"
         >
           Frontend Developer!
@@ -51,7 +51,7 @@ const index = () => {
           variants={fadeIn("up", 0.6)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: true, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.7 }}
           className="max-w-2xl text-center mt-0"
         >
           My job is to take care not to be penalized by the Google algorithm and

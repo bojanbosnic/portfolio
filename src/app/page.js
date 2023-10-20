@@ -17,15 +17,15 @@ export default function Home() {
           <div className="">
             <span>Hello there!</span>
             <motion.h1
-              variants={fadeIn("up", 0.1)}
+              variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: true, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.7 }}
             >
               I'm <span className="text-accent">Bojan</span> Bosnic
             </motion.h1>
             <motion.p
-              variants={fadeIn("up", 0.2)}
+              variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -37,10 +37,10 @@ export default function Home() {
               meets creativity!"
             </motion.p>
             <motion.button
-              variants={fadeIn("up", 0.3)}
+              variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: true, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.7 }}
               type="button"
               class="w-full btn btn-lg sm:w-4/12	"
             >
@@ -48,10 +48,10 @@ export default function Home() {
             </motion.button>
           </div>
           <motion.div
-            variants={fadeIn("down", 0.1)}
+            variants={fadeIn("down", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: true, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.7 }}
             className="mt-16 md:mt-0"
           >
             <Image
