@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { fadeIn } from "@/app/animations";
 import { motion } from "framer-motion";
 
-const index = () => {
+const Index = () => {
   const [inputValue, setInputValue] = useState("");
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -94,7 +94,7 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
 {
   /* <div class="relative">
   <input
