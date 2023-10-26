@@ -13,13 +13,13 @@ h2 {
   @apply font-primary uppercase font-medium text-[26px] mb-6 leading-[46px];
 }
 h3 {
-  @apply font-tertiary uppercase text-accent font-light text-4xl  my-8;
+  @apply font-primary uppercase text-accent font-light text-4xl  my-8;
 }
 h4 {
-  @apply font-tertiary uppercase text-accent font-light text-2xl my-8;
+  @apply font-primary text-accent font-light text-2xl my-8;
 }
 p {
-  @apply font-semibold my-8;
+  @apply font-medium my-8;
 }
 
 input {

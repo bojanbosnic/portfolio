@@ -12,7 +12,7 @@ import { FaReact, FaSass } from "react-icons/fa";
 const index = () => {
   return (
     <div className="container mx-auto my-24 md:my-44">
-      <div className="flex flex-wrap gap-10 justify-center md:flex-nowrap md:justify-between">
+      <div className="flex flex-wrap justify-center md:flex-nowrap md:justify-between gap-16">
         <motion.div
           variants={fadeIn("up", 0.4)}
           initial="hidden"
@@ -29,42 +29,68 @@ const index = () => {
             these cutting-edge technologies."
           </p>
         </motion.div>
+        <div className="w-full md:w-1/2 h-full">
+          <div className="relative  grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
+              <a href="#">
+                <h5 className="mb-2 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
+                  Next.js
+                </h5>
+              </a>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                When you learn React, it is impossible to code without it
+                anymore. React is simple the gold.
+              </p>
+              <div className="my-4">
+                <SiNextdotjs fontSize={50} />
+              </div>
+            </div>
+            <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
+              <a href="#">
+                <h5 className="mb-2 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
+                  Next.js
+                </h5>
+              </a>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                When you learn React, it is impossible to code without it
+                anymore. React is simple the gold.
+              </p>
+              <div className="my-4">
+                <FaSass fontSize={50} className="" color="#CD6799" />
+              </div>
+            </div>
+            <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
+              <a href="#">
+                <h5 class="mb-2 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
+                  Next.js
+                </h5>
+              </a>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                When you learn React, it is impossible to code without it
+                anymore. React is simple the gold.
+              </p>
+              <div className="my-4">
+                <FaReact className="" fontSize={50} />
+              </div>
+            </div>
+            <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
+              <a href="#">
+                <h5 className="mb-2 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
+                  Next.js
+                </h5>
+              </a>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                When you learn React, it is impossible to code without it
+                anymore. React is simple the gold.
+              </p>
+              <div className="my-4">
+                <SiTailwindcss className="" fontSize={60} />
+              </div>
+            </div>
 
-        <div className="w-full md:w-1/2 skills">
-          <div class="each html">
-            <div class="box">
-              <div class="content">
-                <SiNextdotjs class="" fontSize={50} />
-                <p>Lorem, ipsum dolor elit. Sapiente, nemo.</p>
-              </div>
-            </div>
-          </div>
-          <div class="each css">
-            <div class="box">
-              <div class="content">
-                <FaSass class="" fontSize={50} />
-                <p>Lorem, ipsum dolor elit. Sapiente, nemo.</p>
-              </div>
-            </div>
-          </div>
-          <div class="center">
-            <div class="box">
-              <h2>SKILLS</h2>
-            </div>
-          </div>
-          <div class="each js">
-            <div class="box">
-              <div class="content">
-                <FaReact class="" fontSize={50} />
-                <p>Lorem, ipsum dolor elit. Sapiente, nemo.</p>
-              </div>
-            </div>
-          </div>
-          <div class="each ng">
-            <div class="box">
-              <div class="content">
-                <SiTailwindcss class="" fontSize={50} />
-                <p>Lorem, ipsum dolor elit. Sapiente, nemo.</p>
+            <div className="hidden md:block center">
+              <div className="text-center">
+                <h3 className="text-xl">current work in</h3>
               </div>
             </div>
           </div>

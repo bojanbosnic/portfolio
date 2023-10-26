@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <div id="home" className="container mx-auto my-24 md:my-44">
-        <main className="flex flex-wrap justify-center md:flex-nowrap md:justify-between md:items-center">
+        <header className="flex flex-wrap justify-center md:flex-nowrap md:justify-between md:items-center">
           <div className="">
             <span>Hello there!</span>
             <motion.h1
@@ -61,7 +61,7 @@ export default function Home() {
               height={400}
             />
           </motion.div>
-        </main>
+        </header>
       </div>
       <About />
       <Skills />

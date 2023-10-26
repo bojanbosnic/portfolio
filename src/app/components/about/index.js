@@ -8,59 +8,46 @@ import { fadeIn } from "@/app/animations";
 
 const index = () => {
   return (
-    <>
-      <div
-        id="about"
-        className="container mx-auto flex justify-center items-center flex-col"
-      >
-        <motion.h3
-          variants={fadeIn("down", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-        >
-          About Me
-        </motion.h3>
+    <div id="about" className="container mx-auto">
+      <div className="flex justify-center md:justify-between flex-wrap md:flex-nowrap items-center gap-28">
         <motion.div
-          variants={fadeIn("down", 0.3)}
+          variants={fadeIn("right", 0.3)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="flex items-center justify-center  my-7 md:my-14"
+          className="w-1/2"
         >
-          <div className="relative overflow-hidden border-2 rounded-full border-accent w-48 h-48 ">
+          <div className="flex items-center justify-center  my-7 md:my-14">
             <Image
-              class="w-full absolute h-full object-cover overflow-hidden"
-              layout="fill"
+              class=""
+              width={1000}
+              height={1000}
               src={me.src}
               alt="Bojan's image"
             />
           </div>
-          <div className="w-52 h-52 absolute border-2 border-x-transparent border-accent rotate-45 rounded-full circle-animation"></div>
         </motion.div>
-        <motion.h4
-          variants={fadeIn("up", 0.5)}
+        <motion.div
+          variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="text-3xl font-semibold  text-center"
+          className="text-center md:text-left"
         >
-          Frontend Developer!
-        </motion.h4>
-        <motion.p
-          variants={fadeIn("up", 0.6)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="max-w-2xl text-center mt-0"
-        >
-          My job is to take care not to be penalized by the Google algorithm and
-          by users too. I fix the broken UX/UI principles, semantic HTML,
-          headings hierarchy, web responsiveness, web accessibility, code W3C
-          validation, and optimization.
-        </motion.p>
+          <h3>About Me</h3>
+          <h4 className="text-3xl text-white">
+            I'm Freelance Front-end Developer
+          </h4>
+          <p className="max-w-2xl mt-0">
+            My job is to take care not to be penalized by the Google algorithm
+            and by users too. I fix the broken UX/UI principles, semantic HTML,
+            headings hierarchy, web responsiveness, web accessibility, code W3C
+            validation, and optimization.
+          </p>
+          <button className="btn btn-lg">Contact Me</button>
+        </motion.div>
       </div>
-    </>
+    </div>
   );
 };
 
