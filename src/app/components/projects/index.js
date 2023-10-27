@@ -16,10 +16,10 @@ const index = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="w-full md:w-1/2"
+          className="w-full text-center md:w-1/2"
         >
           <h3>My latest work</h3>
-          <p className="max-w-xs">
+          <p className="w-full md:max-w-xs">
             My job is to take care not to be penalized by the Google algorithm
             and by users too. I fix the broken UX/UI principles, semantic HTML,
             headings hierarchy, web responsiveness, web accessibility, code W3C

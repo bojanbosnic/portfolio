@@ -18,7 +18,7 @@ const index = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="w-full md:w-1/2"
+          className="w-full md:w-1/2 text-center md:text-left"
         >
           <h3>Skills</h3>
           <h4>Every Day is a New Challenge</h4>
@@ -33,7 +33,7 @@ const index = () => {
           <div className="relative  grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
               <a href="#">
-                <h5 className="mb-2 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="mb-2 text-2xl uppercase font-primary tracking-tight text-gray-900 dark:text-white">
                   Next.js
                 </h5>
               </a>

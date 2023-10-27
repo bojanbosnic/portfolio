@@ -25,8 +25,8 @@ const Index = () => {
           viewport={{ once: false, amount: 0.7 }}
           className="w-full md:w-1/2"
         >
-          <h3 className="uppercase">Get In Touch</h3>
-          <span className="text-6xl max-w-xs block font-medium">
+          <h3 className="uppercase text-center md:text-left">Get In Touch</h3>
+          <span className="text-6xl w-full md:max-w-xs block font-medium text-center md:text-left">
             Let's work together!
           </span>
         </motion.div>
@@ -67,13 +67,9 @@ const Index = () => {
                   className="z-10"
                   placeholder="Your Email"
                 />
-                {/* <label htmlFor="email_id"></label> */}
               </div>
             </div>
             <div>
-              {/* <label htmlFor="msg_id" className="font-medium ">
-              Your Message{" "}
-            </label> */}
               <div className="relative">
                 <textarea
                   id="msg_id"
@@ -83,7 +79,10 @@ const Index = () => {
                 <label htmlFor="msg_id"></label>
               </div>
             </div>
-            <button type="submit" className="w-1/3 pointer btn btn-sm my-8">
+            <button
+              type="submit"
+              className="w-full md:w-1/3 pointer btn btn-lg my-8"
+            >
               Pošalji poruku
             </button>
           </form>

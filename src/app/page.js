@@ -15,7 +15,15 @@ export default function Home() {
       <div id="home" className="container mx-auto my-24 md:my-44">
         <header className="flex flex-wrap justify-center md:flex-nowrap md:justify-between md:items-center">
           <div className="">
-            <span>Hello there!</span>
+            <motion.span
+              className="block"
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+            >
+              Hello there!
+            </motion.span>
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
@@ -29,23 +37,25 @@ export default function Home() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="max-w-xl	text-[#bfbfc0]"
+              className="max-w-2xl	text-[#bfbfc0]"
             >
               "Hello! I'm Bojan Bosnic, a Web Developer from Gradiska, Bosnia. I
               bring creativity and dedication to web development, aiming to make
               a global impact. Welcome to my digital space, where where code
               meets creativity!"
             </motion.p>
-            <motion.button
-              variants={fadeIn("up", 0.5)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              type="button"
-              class="w-full btn btn-lg sm:w-4/12	"
-            >
-              Download CV{" "}
-            </motion.button>
+            <a href="../../assets/cv/Bojan-CV.pdf" download target="_blank">
+              <motion.button
+                variants={fadeIn("up", 0.5)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                type="button"
+                class="w-full btn btn-lg sm:w-4/12"
+              >
+                Download Cv{" "}
+              </motion.button>
+            </a>
           </div>
           <motion.div
             variants={fadeIn("down", 0.3)}
