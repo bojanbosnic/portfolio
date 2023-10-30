@@ -11,12 +11,12 @@ const index = () => {
       className="container mx-auto flex flex-col my-24 gap-8 md:my-44 md:gap-16"
     >
       <div className="flex flex-wrap md:flex-nowrap gap-8 md:gap-16">
-        <motion.div
+        <div
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="w-full text-center md:w-1/2"
+          className="w-full text-center md:text-left md:w-1/2"
         >
           <h3>My latest work</h3>
           <p className="w-full md:max-w-xs">
@@ -25,8 +25,8 @@ const index = () => {
             headings hierarchy, web responsiveness, web accessibility, code W3C
             validation, and optimization.
           </p>
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}
@@ -44,10 +44,10 @@ const index = () => {
               <div class="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
           </div>{" "}
-        </motion.div>{" "}
+        </div>{" "}
       </div>
       <div className="flex flex-wrap justify-center md:flex-nowrap md:justify-between gap-16">
-        <motion.div
+        <div
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"show"}
@@ -68,8 +68,8 @@ const index = () => {
               <div class="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
           </div>{" "}
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}
@@ -87,7 +87,7 @@ const index = () => {
               <div class="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
           </div>{" "}
-        </motion.div>
+        </div>
       </div>
     </div>
   );

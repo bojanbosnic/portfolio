@@ -10,7 +10,7 @@ import { fadeIn } from "../../animations";
 const index = () => {
   return (
     <div className="container mx-auto flex justify-between items-center mt-10 mb-24">
-      <motion.div
+      <div
         variants={fadeIn("right", 0.3)}
         initial="hidden"
         whileInView={"show"}
@@ -18,8 +18,8 @@ const index = () => {
         className="font-primary"
       >
         <span className="tracking-widest text-gradient">Portfolio.</span>
-      </motion.div>
-      <motion.div
+      </div>
+      <div
         variants={fadeIn("left", 0.3)}
         initial="hidden"
         whileInView={"show"}
@@ -54,7 +54,7 @@ const index = () => {
         >
           <BsFillTelephoneFill />
         </a>
-      </motion.div>
+      </div>
     </div>
   );
 };

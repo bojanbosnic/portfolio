@@ -12,8 +12,8 @@ import { FaReact, FaSass } from "react-icons/fa";
 const index = () => {
   return (
     <div className="container mx-auto my-24 md:my-44">
-      <div className="flex flex-wrap justify-center md:flex-nowrap md:justify-between gap-16">
-        <motion.div
+      <div className="flex flex-wrap justify-center items-center md:flex-nowrap md:justify-between gap-16">
+        <div
           variants={fadeIn("up", 0.4)}
           initial="hidden"
           whileInView={"show"}
@@ -28,12 +28,12 @@ const index = () => {
             optimal performance, I'm ready to bring your projects to life using
             these cutting-edge technologies."
           </p>
-        </motion.div>
+        </div>
         <div className="w-full md:w-1/2 h-full">
           <div className="relative  grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
-              <div className="flex justify-between">
-                <h5 className="mb-2 text-2xl uppercase font-primary tracking-tight text-gray-900 dark:text-white">
+              <div className="flex">
+                <h5 className="mb-2 mr-8 text-2xl uppercase font-primary tracking-tight text-gray-900 dark:text-white">
                   Next.js
                 </h5>
                 <SiNextdotjs fontSize={30} />
@@ -45,11 +45,11 @@ const index = () => {
               </p>
             </div>
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
-              <div className="flex justify-between">
-                <h5 className="mb-2 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
+              <div className="flex justify-end">
+                <FaSass fontSize={30} className="" color="#CD6799" />
+                <h5 className="mb-2 ml-8 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
                   Sass
                 </h5>
-                <FaSass fontSize={30} className="" color="#CD6799" />
               </div>
 
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -58,32 +58,30 @@ const index = () => {
               </p>
             </div>
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
-              <a href="#">
-                <h5 class="mb-2 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
-                  Next.js
+              <div className="flex">
+                <h5 class="mb-2 mr-8 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
+                  React{" "}
                 </h5>
-              </a>
+                <FaReact className="" color="#61DBFB" fontSize={30} />
+              </div>
+
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 When you learn React, it is impossible to code without it
                 anymore. React is simple the gold.
               </p>
-              <div className="my-4">
-                <FaReact className="" fontSize={50} />
-              </div>
             </div>
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
-              <a href="#">
-                <h5 className="mb-2 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
-                  Next.js
+              <div className="flex justify-end">
+                <SiTailwindcss className="" fontSize={30} />
+                <h5 className="mb-2 ml-8 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
+                  Tailwind{" "}
                 </h5>
-              </a>
+              </div>
+
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 When you learn React, it is impossible to code without it
                 anymore. React is simple the gold.
               </p>
-              <div className="my-4">
-                <SiTailwindcss className="" fontSize={60} />
-              </div>
             </div>
 
             <div className="hidden md:block center">

@@ -18,7 +18,7 @@ const Index = () => {
   return (
     <div id="contact" className="container mx-auto">
       <div className="flex flex-wrap justify-between items-center gap-20 my-24 md:my-44 md:flex-nowrap">
-        <motion.div
+        <div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView={"show"}
@@ -29,8 +29,8 @@ const Index = () => {
           <span className="text-6xl w-full md:max-w-xs block font-medium text-center md:text-left">
             Let's work together!
           </span>
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView={"show"}
@@ -79,14 +79,11 @@ const Index = () => {
                 <label htmlFor="msg_id"></label>
               </div>
             </div>
-            <button
-              type="submit"
-              className="w-full md:w-1/3 pointer btn btn-lg my-8"
-            >
+            <button type="submit" className="w-full btn px-12 lg:w-4/12 my-8">
               Pošalji poruku
             </button>
           </form>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

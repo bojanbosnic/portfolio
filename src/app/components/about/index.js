@@ -10,7 +10,7 @@ const index = () => {
   return (
     <div id="about" className="container mx-auto">
       <div className="flex justify-center md:justify-between flex-wrap md:flex-nowrap items-center gap-28">
-        <motion.div
+        <div
           variants={fadeIn("right", 0.3)}
           initial="hidden"
           whileInView={"show"}
@@ -26,8 +26,8 @@ const index = () => {
               alt="Bojan's image"
             />
           </div>
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView={"show"}
@@ -44,8 +44,8 @@ const index = () => {
             headings hierarchy, web responsiveness, web accessibility, code W3C
             validation, and optimization.
           </p>
-          <button className="btn btn-lg">Contact Me</button>
-        </motion.div>
+          <button className="btn w-full lg:w-4/12">Contact Me</button>
+        </div>
       </div>
     </div>
   );
