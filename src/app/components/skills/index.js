@@ -32,32 +32,30 @@ const index = () => {
         <div className="w-full md:w-1/2 h-full">
           <div className="relative  grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
-              <a href="#">
+              <div className="flex justify-between">
                 <h5 className="mb-2 text-2xl uppercase font-primary tracking-tight text-gray-900 dark:text-white">
                   Next.js
                 </h5>
-              </a>
+                <SiNextdotjs fontSize={30} />
+              </div>
+
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 When you learn React, it is impossible to code without it
                 anymore. React is simple the gold.
               </p>
-              <div className="my-4">
-                <SiNextdotjs fontSize={50} />
-              </div>
             </div>
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
-              <a href="#">
+              <div className="flex justify-between">
                 <h5 className="mb-2 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
-                  Next.js
+                  Sass
                 </h5>
-              </a>
+                <FaSass fontSize={30} className="" color="#CD6799" />
+              </div>
+
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 When you learn React, it is impossible to code without it
                 anymore. React is simple the gold.
               </p>
-              <div className="my-4">
-                <FaSass fontSize={50} className="" color="#CD6799" />
-              </div>
             </div>
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
               <a href="#">
