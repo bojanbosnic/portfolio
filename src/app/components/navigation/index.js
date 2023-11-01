@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Link, scroll } from "react-scroll";
+import { Link, Element, Events, animateScroll as scroll } from "react-scroll";
 import { AiFillHome } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
@@ -9,7 +9,7 @@ import { BsGearFill, BsFillTelephoneFill } from "react-icons/bs";
 const Index = () => {
   const scrollToTop = () => {
     console.log("THIS", scroll);
-    // scroll.scrollToTop();
+    scroll.scrollToTop();
   };
   return (
     <div className="fixed z-50 w-full md:w-14 bottom-2 right-0 md:bottom-0 md:top-1/3 md:right-4">
@@ -20,7 +20,7 @@ const Index = () => {
               onClick={scrollToTop}
               spy={true}
               smooth={true}
-              duration={500}
+              duration={100}
               activeClass="active"
               className="cursor-pointer "
             >
