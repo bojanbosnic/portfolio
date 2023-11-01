@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { fadeIn } from "@/app/animations";
-import { motion } from "framer-motion";
 
 const Index = () => {
   const [inputValue, setInputValue] = useState("");
@@ -14,7 +13,7 @@ const Index = () => {
       setInputValue("");
     }
   };
-
+  console.log(!!inputValue);
   return (
     <div id="contact" className="container mx-auto">
       <div className="flex flex-wrap justify-between items-center gap-20 my-24 md:my-44 md:flex-nowrap">
@@ -43,7 +42,7 @@ const Index = () => {
                 id="name_id"
                 name="user_name"
                 type="text"
-                className={`z-10 border-b py-1 focus:outline-none`}
+                className="z-10 border-b py-1 focus:outline-none"
                 autoComplete="off"
                 value={inputValue}
                 onChange={handleInputChange}
@@ -51,7 +50,7 @@ const Index = () => {
               />
               <label
                 htmlFor="name_id"
-                className={`absolute left-0 top-1 text-gray-600 transition-transform ${
+                className={`absolute left-0 top-1  transition-transform ${
                   inputValue ? "-translate-y-6 text-sm" : ""
                 }`}
               >
@@ -64,9 +63,20 @@ const Index = () => {
                   id="email_id"
                   type="email"
                   name="user_email"
-                  className="z-10"
-                  placeholder="Your Email"
+                  className="z-10 border-b py-1 focus:outline-none"
+                  autoComplete="off"
+                  value={inputValue}
+                  onChange={() => setInputValue(e.target.value)}
+                  onBlur={handleInputBlur}
                 />
+                <label
+                  htmlFor="email_id"
+                  className={`absolute left-0 top-1  transition-transform ${
+                    inputValue ? "-translate-y-6 text-sm" : ""
+                  }`}
+                >
+                  Your Email{" "}
+                </label>
               </div>
             </div>
             <div>
@@ -79,8 +89,8 @@ const Index = () => {
                 <label htmlFor="msg_id"></label>
               </div>
             </div>
-            <button type="submit" className="w-full btn px-12 lg:w-4/12 my-8">
-              Pošalji poruku
+            <button type="submit" className="w-full btn px-12 lg:w-1/2 my-8">
+              Send Message
             </button>
           </form>
         </div>

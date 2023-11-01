@@ -37,12 +37,12 @@ export default function Home() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="max-w-xl	text-[#bfbfc0]"
+              className="max-w-xl	"
             >
-              "Hello! I'm Bojan Bosnic, a Web Developer from Gradiska, Bosnia. I
-              bring creativity and dedication to web development, aiming to make
-              a global impact. Welcome to my digital space, where where code
-              meets creativity!"
+              "I'm Bojan Bosnic, a Web Developer from Gradiska, Bosnia. I bring
+              creativity and dedication to web development, aiming to make a
+              global impact. Welcome to my digital space, where where code meets
+              creativity!"
             </p>
             <a href="../../assets/cv/Bojan-CV.pdf" download target="_blank">
               <button

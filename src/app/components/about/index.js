@@ -9,7 +9,7 @@ import { fadeIn } from "@/app/animations";
 const index = () => {
   return (
     <div id="about" className="container mx-auto">
-      <div className="flex justify-center md:justify-between flex-wrap md:flex-nowrap items-center gap-28">
+      <div className="flex justify-center md:justify-between flex-wrap md:flex-nowrap items-center gap-0 md:gap-28">
         <div
           variants={fadeIn("right", 0.3)}
           initial="hidden"
@@ -39,10 +39,11 @@ const index = () => {
             I'm Freelance Front-end Developer
           </h4>
           <p className="max-w-2xl mt-0">
-            My job is to take care not to be penalized by the Google algorithm
-            and by users too. I fix the broken UX/UI principles, semantic HTML,
-            headings hierarchy, web responsiveness, web accessibility, code W3C
-            validation, and optimization.
+            Hello! My name is Bojan and I'm a Web Developer who loves to work
+            with JavaScript technologies. Right now my mind is focused on
+            learning everything that is related to Web Development. I'm also
+            passionate about exploring new technologies which I can leverage to
+            solve real-life problems.
           </p>
           <button className="btn w-full lg:w-4/12">Contact Me</button>
         </div>

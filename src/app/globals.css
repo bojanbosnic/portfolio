@@ -21,6 +21,9 @@ h4 {
 p {
   @apply font-medium my-8;
 }
+span {
+  @apply font-medium;
+}
 
 input {
   @apply w-full py-3 bg-transparent border-b outline-none placeholder:text-white transition-all focus:border-accent;

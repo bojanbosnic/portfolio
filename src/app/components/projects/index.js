@@ -10,7 +10,7 @@ const index = () => {
       id="projects"
       className="container mx-auto flex flex-col my-24 gap-8 md:my-44 md:gap-16"
     >
-      <div className="flex flex-wrap md:flex-nowrap gap-8 md:gap-16">
+      <div className="flex flex-wrap items-center md:flex-nowrap gap-8 md:gap-16">
         <div
           variants={fadeIn("right", 0.4)}
           initial="hidden"
@@ -20,10 +20,10 @@ const index = () => {
         >
           <h3>My latest work</h3>
           <p className="w-full md:max-w-xs">
-            My job is to take care not to be penalized by the Google algorithm
-            and by users too. I fix the broken UX/UI principles, semantic HTML,
-            headings hierarchy, web responsiveness, web accessibility, code W3C
-            validation, and optimization.
+            I specialize in React and Next.js, crafting dynamic and responsive
+            web applications. With a focus on seamless user interfaces and
+            optimal performance, I'm ready to bring your projects to life using
+            these cutting-edge technologies."
           </p>
         </div>
         <div
