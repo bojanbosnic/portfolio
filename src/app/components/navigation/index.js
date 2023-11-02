@@ -22,6 +22,7 @@ const Index = () => {
               smooth={true}
               duration={100}
               activeClass="active"
+              title="Home"
               className="cursor-pointer "
             >
               <AiFillHome fontSize={22} />
@@ -35,6 +36,7 @@ const Index = () => {
               offset={-40}
               duration={100}
               activeClass="active"
+              title="About Me"
               className="cursor-pointer "
             >
               <FaUser fontSize={22} />
@@ -48,7 +50,8 @@ const Index = () => {
               offset={-130}
               duration={100}
               activeClass="active"
-              className="cursor-pointer "
+              title="Skills"
+              className="cursor-pointer"
             >
               <BsGearFill fontSize={22} />
             </Link>
@@ -61,6 +64,7 @@ const Index = () => {
               offset={-10}
               duration={100}
               activeClass="active"
+              title="Projects"
               className="cursor-pointer "
             >
               <MdWork fontSize={22} />
@@ -74,6 +78,7 @@ const Index = () => {
               offset={-80}
               duration={100}
               activeClass="active"
+              title="Contact"
               className="cursor-pointer "
             >
               <BsFillTelephoneFill fontSize={22} />

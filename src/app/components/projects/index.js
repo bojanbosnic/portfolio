@@ -46,7 +46,7 @@ const index = () => {
           </div>{" "}
         </div>{" "}
       </div>
-      <div className="flex flex-wrap justify-center md:flex-nowrap md:justify-between gap-16">
+      <div className="flex flex-wrap justify-center md:flex-nowrap md:justify-between gap-8 md:gap-16">
         <div
           variants={fadeIn("right", 0.4)}
           initial="hidden"

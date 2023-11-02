@@ -39,11 +39,11 @@ const index = () => {
             I'm Freelance Front-end Developer
           </h4>
           <p className="max-w-2xl mt-0">
-            Hello! My name is Bojan and I'm a Web Developer who loves to work
-            with JavaScript technologies. Right now my mind is focused on
-            learning everything that is related to Web Development. I'm also
-            passionate about exploring new technologies which I can leverage to
-            solve real-life problems.
+            Hello! My name is Bojan who loves to work with JavaScript
+            technologies. Right now my mind is focused on learning everything
+            that is related to Web Development. I'm also passionate about
+            exploring new technologies which I can leverage to solve real-life
+            problems.
           </p>
           <button className="btn w-full lg:w-4/12">Contact Me</button>
         </div>

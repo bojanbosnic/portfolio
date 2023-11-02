@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
         <Contact />
         <Navigation />
         {children}
-        <Footer />
       </body>
     </html>
   );

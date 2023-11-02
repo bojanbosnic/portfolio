@@ -30,58 +30,49 @@ const index = () => {
         <div className="w-full xl:w-1/2 h-full">
           <div className="relative  grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
-              <div className="flex">
-                <h5 className=" mr-8 text-2xl uppercase font-medium tracking-tight text-gray-900 dark:text-white">
-                  Next.js
-                </h5>
+              <div className="flex justify-start">
+                <h5 className="mr-8 ">Next.js</h5>
                 <SiNextdotjs fontSize={30} />
               </div>
 
-              <p className="mb-3 font-normal">
+              <p className="mb-3 text-left font-normal">
                 React made simple and fast. Build fast and scalable React
                 applications with ease.
               </p>
             </div>
             <div className="w-full flex flex-col md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
-              <div className="flex justify-end">
+              <div className="flex justify-start flex-row md:justify-end md:flex-row-reverse">
+                <h5 className="mr-8 md:ml-8 ">Sass</h5>
                 <FaSass fontSize={30} className="" color="#CD6799" />
-                <h5 className="ml-8 text-2xl uppercase font-medium tracking-tight text-gray-900 dark:text-white">
-                  Sass
-                </h5>
               </div>
-              <p className="mb-3 font-normal text-left">
+              <p className="mb-3 text-left font-normal">
                 A CSS preprocessor that provides a CSS more efficient,
                 maintainable, and scalable.
               </p>
             </div>
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
-              <div className="flex">
-                <h5 class="mr-8 text-2xl uppercase font-medium tracking-tight text-gray-900 dark:text-white">
-                  React{" "}
-                </h5>
+              <div className="flex justify-start">
+                <h5 class="mr-8 ">React </h5>
                 <FaReact className="" color="#61DBFB" fontSize={30} />
               </div>
 
-              <p className="mb-3 font-normal">
+              <p className="mb-3 text-left font-normal">
                 The best JavaScript library. Create dynamic and interactive UIs
               </p>
             </div>
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
-              <div className="flex justify-end">
+              <div className="flex justify-start flex-row md:flex-row-reverse md:justify-end">
+                <h5 className="mr-8 md:ml-8 ">Tailwind </h5>
                 <SiTailwindcss className="" fontSize={30} color="#38bdf8" />
-                <h5 className="ml-8 text-2xl uppercase font-medium tracking-tight text-gray-900 dark:text-white">
-                  Tailwind{" "}
-                </h5>
               </div>
-              <p className="mb-3 font-normal">
+              <p className="mb-3 text-left font-normal">
                 A utility-first CSS framework for rapidly building custom
                 designs.
               </p>
             </div>
-
             <div className="hidden md:flex justify-center items-center center">
               <div className="text-center">
-                <h3 className="text-xl">Current work with</h3>
+                <h6>Current work with</h6>
               </div>
             </div>
           </div>
