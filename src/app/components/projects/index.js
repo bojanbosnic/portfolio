@@ -42,10 +42,7 @@ const index = () => {
             <div className="absolute -bottom-full left-16 group-hover:bottom-10 transition-all duration-700 z-40">
               <span className="font-medium">Sezonac</span>
             </div>
-            <a
-              href="https://dejan-skondric-portfolio-k0gu2ypzg-bojanbosnic.vercel.app/"
-              target="_blank"
-            >
+            <a href="https://sezonac-web.vercel.app/" target="_blank">
               <div className="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
           </div>
@@ -88,10 +85,7 @@ const index = () => {
             <div className="absolute -bottom-full left-16 group-hover:bottom-10 transition-all duration-700 z-40">
               <span className="font-medium">GIS App</span>
             </div>
-            <a
-              href="https://dejan-skondric-portfolio-k0gu2ypzg-bojanbosnic.vercel.app/"
-              target="_blank"
-            >
+            <a href="https://gis-app-alpha.vercel.app/" target="_blank">
               <div className="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
           </div>

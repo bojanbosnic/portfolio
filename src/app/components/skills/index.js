@@ -31,7 +31,7 @@ const index = () => {
           <div className="relative  grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
               <div className="flex justify-start">
-                <h5 className="mr-8 ">Next.js</h5>
+                <h5>Next.js</h5>
               </div>
 
               <p className="mb-3 text-left font-normal">
@@ -40,8 +40,8 @@ const index = () => {
               </p>
             </div>
             <div className="w-full flex flex-col md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
-              <div className="flex justify-start flex-row md:justify-end md:flex-row-reverse">
-                <h5 className="mr-8 md:ml-8 ">Sass</h5>
+              <div className="flex justify-start md:justify-end">
+                <h5>Sass</h5>
               </div>
               <p className="mb-3 text-left md:text-right font-normal">
                 A CSS preprocessor that provides a CSS more efficient,
@@ -50,7 +50,7 @@ const index = () => {
             </div>
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
               <div className="flex justify-start">
-                <h5 class="mr-8 ">React </h5>
+                <h5>React </h5>
               </div>
 
               <p className="mb-3 text-left font-normal">
@@ -59,7 +59,7 @@ const index = () => {
             </div>
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
               <div className="flex justify-start md:justify-end">
-                <h5 className="">Tailwind </h5>
+                <h5>Tailwind </h5>
               </div>
               <p className="mb-3 text-left md:text-right font-normal">
                 A utility-first CSS framework for rapidly building custom
