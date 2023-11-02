@@ -65,6 +65,7 @@ const Index = () => {
               src={myself.src}
               width={400}
               height={400}
+              alt="Bojan Img"
             />
           </div>
         </div>
