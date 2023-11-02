@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import "./projects_style.scss";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/app/animations";
+import img from "../../../../assets/img/portfolio-img1.png";
 
 const index = () => {
   return (
@@ -26,67 +28,73 @@ const index = () => {
             these cutting-edge technologies."
           </p>
         </div>
-        <div
-          variants={fadeIn("left", 0.4)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          class="w-full group relative border-2 rounded-xl h-full border-white/50 overflow-hidden bg-cover bg-no-repeat  md:w-1/2"
-        >
-          <div class="relative bg_img  rounded-xl h-80  overflow-hidden bg-cover bg-no-repeat">
-            <div className="absolute -bottom-full left-24 group-hover:bottom-24 transition-all duration-500 z-40">
+        <div className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat">
+          <div className="relative rounded-xl h-80 overflow-hidden bg-cover bg-no-repeat">
+            <Image
+              src={img.src} // Zamijenjte sa stvarnom putanjom do slike
+              alt="Opis slike"
+              layout="fill"
+              objectFit="cover"
+            />
+            <div className="absolute -bottom-full left-16 group-hover:bottom-20 transition-all duration-500 z-40">
               <span className="text-gradient">UI/UX Design</span>
             </div>
-            <div className="absolute -bottom-full left-24 group-hover:bottom-16 transition-all duration-700 z-40">
+            <div className="absolute -bottom-full left-16 group-hover:bottom-10 transition-all duration-700 z-40">
               <span className="font-medium">Sezonac</span>
             </div>
-            <a href="https://sezonac-web.vercel.app/" target="_blank">
-              <div class="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
+            <a
+              href="https://dejan-skondric-portfolio-k0gu2ypzg-bojanbosnic.vercel.app/"
+              target="_blank"
+            >
+              <div className="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
-          </div>{" "}
-        </div>{" "}
+          </div>
+        </div>
       </div>
       <div className="flex flex-wrap justify-center md:flex-nowrap md:justify-between gap-8 md:gap-16">
-        <div
-          variants={fadeIn("right", 0.4)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat"
-        >
-          <div class="relative bg_img  rounded-xl h-80  overflow-hidden bg-cover bg-no-repeat">
-            <div className="absolute -bottom-full left-24 group-hover:bottom-24 transition-all duration-500 z-40">
+        <div className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat">
+          <div className="relative rounded-xl h-80 overflow-hidden bg-cover bg-no-repeat">
+            <Image
+              src={img.src} // Zamijenjte sa stvarnom putanjom do slike
+              alt="Opis slike"
+              layout="fill" // Postavite layout na 'fill'
+              objectFit="cover"
+            />
+            <div className="absolute -bottom-full left-16 group-hover:bottom-20 transition-all duration-500 z-40">
               <span className="text-gradient">UI/UX Design</span>
             </div>
-            <div className="absolute -bottom-full left-24 group-hover:bottom-16 transition-all duration-700 z-40">
+            <div className="absolute -bottom-full left-16 group-hover:bottom-10 transition-all duration-700 z-40">
               <span className="font-medium">Skondra Portfolio</span>
             </div>
             <a
               href="https://dejan-skondric-portfolio-k0gu2ypzg-bojanbosnic.vercel.app/"
               target="_blank"
             >
-              <div class="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
+              <div className="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
-          </div>{" "}
+          </div>
         </div>
-        <div
-          variants={fadeIn("left", 0.4)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat"
-        >
-          <div class="relative bg_img  rounded-xl h-80  overflow-hidden bg-cover bg-no-repeat">
-            <div className="absolute -bottom-full left-24 group-hover:bottom-24 transition-all duration-500 z-40">
+        <div className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat">
+          <div className="relative rounded-xl h-80 overflow-hidden bg-cover bg-no-repeat">
+            <Image
+              src={img.src} // Zamijenjte sa stvarnom putanjom do slike
+              alt="Opis slike"
+              layout="fill" // Postavite layout na 'fill'
+              objectFit="cover"
+            />
+            <div className="absolute -bottom-full left-16 group-hover:bottom-20 transition-all duration-500 z-40">
               <span className="text-gradient">UI/UX Design</span>
             </div>
-            <div className="absolute -bottom-full left-24 group-hover:bottom-16 transition-all duration-700 z-40">
+            <div className="absolute -bottom-full left-16 group-hover:bottom-10 transition-all duration-700 z-40">
               <span className="font-medium">GIS App</span>
             </div>
-            <a href="https://gis-app-alpha.vercel.app/" target="_blank">
-              <div class="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
+            <a
+              href="https://dejan-skondric-portfolio-k0gu2ypzg-bojanbosnic.vercel.app/"
+              target="_blank"
+            >
+              <div className="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
-          </div>{" "}
+          </div>
         </div>
       </div>
     </div>

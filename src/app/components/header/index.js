@@ -35,10 +35,10 @@ const Index = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="max-w-xl	"
             >
-              "I'm Bojan Bosnic, a Web Developer from Gradiska, Bosnia. I bring
+              I'm Bojan Bosnic, a Web Developer from Gradiska, Bosnia. I bring
               creativity and dedication to web development, aiming to make a
               global impact. Welcome to my digital space, where where code meets
-              creativity!"
+              creativity!
             </p>
             <a href="../../assets/cv/Bojan-CV.pdf" download target="_blank">
               <button
