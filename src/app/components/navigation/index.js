@@ -17,6 +17,7 @@ const Index = () => {
         <ul className="flex flex-row justify-evenly md:flex-col md:justify-center p-0 items-center list-none ">
           <li className="my-6 text-white/50">
             <Link
+              to="/"
               onClick={scrollToTop}
               spy={true}
               smooth={true}

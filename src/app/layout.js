@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${orbitron.variable} ${rajdhani.variable} ${aldrich.variable}`}
     >
-      <body className={`bg-image`}>
+      <body className={`bg-image overflow-x-hidden`}>
         <Contact />
         <Navigation />
         {children}
