@@ -10,7 +10,7 @@ const index = () => {
   return (
     <div id="about" className="container mx-auto">
       <div className="flex justify-center md:justify-between flex-wrap md:flex-nowrap items-center gap-0 md:gap-28">
-        <div
+        <motion.div
           variants={fadeIn("right", 0.3)}
           initial="hidden"
           whileInView={"show"}
@@ -26,26 +26,47 @@ const index = () => {
               alt="Bojan's image"
             />
           </div>
-        </div>
-        <div
-          variants={fadeIn("left", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="text-center md:text-left"
-        >
-          <h3>About Me</h3>
-          <h4 className="text-3xl text-white">
+        </motion.div>
+        <div className="text-center md:text-left">
+          <motion.h3
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+          >
+            About Me
+          </motion.h3>
+          <motion.h4
+            variants={fadeIn("left", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="text-3xl text-white"
+          >
             I'm Freelance Front-end Developer
-          </h4>
-          <p className="max-w-2xl mt-0">
+          </motion.h4>
+          <motion.p
+            variants={fadeIn("left", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="max-w-2xl mt-0"
+          >
             Hello! My name is Bojan who loves to work with JavaScript
             technologies. Right now my mind is focused on learning everything
             that is related to Web Development. I'm also passionate about
             exploring new technologies which I can leverage to solve real-life
             problems.
-          </p>
-          <button className="btn w-full lg:w-4/12">Contact Me</button>
+          </motion.p>
+          <motion.button
+            variants={fadeIn("left", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="btn w-full lg:w-4/12"
+          >
+            Contact Me
+          </motion.button>
         </div>
       </div>
     </div>
