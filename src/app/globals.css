@@ -106,9 +106,3 @@ textarea {
   padding: 1rem;
   border-radius: 100%;
 }
-.bg-image {
-  background-image: url("../../assets/img/site-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* overflow: hidden; */
-}

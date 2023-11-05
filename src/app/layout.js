@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${orbitron.variable} ${rajdhani.variable} ${aldrich.variable}`}
     >
-      <body className={`bg-image overflow-x-hidden`}>
+      <body className="bg-gradient-to-b from-[#1f0e42] to-[#230f42] mix-blend-normal dark:opacity-[0.15] blur-[60px]">
         <Contact />
         <Navigation />
         {children}

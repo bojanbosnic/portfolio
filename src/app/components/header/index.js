@@ -11,7 +11,7 @@ const Index = () => {
       <div id="home" className="container mx-auto my-24 md:my-44">
         <div className="flex flex-wrap justify-center md:flex-nowrap md:justify-between gap-20 md:items-center">
           <div className="">
-            <motion.span
+            <span
               className="block mb-2"
               variants={fadeIn("up", 0.2)}
               initial="hidden"
@@ -19,16 +19,16 @@ const Index = () => {
               viewport={{ once: false, amount: 0.7 }}
             >
               Hello there!
-            </motion.span>
-            <motion.h1
+            </span>
+            <h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
             >
               I'm <span className="text-accent">Bojan</span> Bosnic
-            </motion.h1>
-            <motion.p
+            </h1>
+            <p
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
@@ -39,9 +39,9 @@ const Index = () => {
               creativity and dedication to web development, aiming to make a
               global impact. Welcome to my digital space, where where code meets
               creativity!
-            </motion.p>
+            </p>
             <a href="../../assets/cv/Bojan-CV.pdf" download target="_blank">
-              <motion.button
+              <button
                 variants={fadeIn("up", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
@@ -50,10 +50,10 @@ const Index = () => {
                 class="w-full btn  lg:w-4/12"
               >
                 Download Cv{" "}
-              </motion.button>
+              </button>
             </a>
           </div>
-          <motion.div
+          <div
             variants={fadeIn("left", 0.3)}
             initial="hidden"
             whileInView={"show"}
@@ -67,7 +67,7 @@ const Index = () => {
               height={400}
               alt="Bojan Img"
             />
-          </motion.div>
+          </div>
         </div>
       </div>
     </header>
