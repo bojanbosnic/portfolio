@@ -4,26 +4,26 @@ import Link from "next/link";
 import { BsTelephone, BsFillTelephoneFill } from "react-icons/bs";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../animations";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "../../animations";
 
 const index = () => {
   return (
     <div className="container mx-auto flex justify-between items-center mt-10 mb-24">
       <div
-        variants={fadeIn("right", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: true, amount: 0.7 }}
+        data-aos="fade-right"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
         className="font-primary"
       >
         <span className="tracking-widest text-gradient">Portfolio.</span>
       </div>
       <div
-        variants={fadeIn("left", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: true, amount: 0.7 }}
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
         className="flex items-center"
       >
         <a

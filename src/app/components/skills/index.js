@@ -1,21 +1,22 @@
 "use client";
 import React from "react";
 import "./skills_style.scss";
-import { fadeIn } from "@/app/animations";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "@/app/animations";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { FaReact, FaSass } from "react-icons/fa";
 
 const index = () => {
   return (
     <div id="skills" className="container mx-auto my-24 md:my-44">
-      <div className="flex flex-wrap justify-center items-center md:flex-nowrap md:justify-between gap-16">
-        <div
-          variants={fadeIn("up", 0.4)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="w-full md:w-1/2 text-center md:text-left"
-        >
+      <div
+        data-aos="fade-right"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        className="flex flex-wrap justify-center items-center md:flex-nowrap md:justify-between gap-16"
+      >
+        <div className="w-full md:w-1/2 text-center md:text-left">
           <h3>Skills</h3>
           <h4 className="text-3xl text-white">Every Day is a New Challenge</h4>
           <p className="max-w-xl">
@@ -27,7 +28,13 @@ const index = () => {
             teamwork.
           </p>
         </div>
-        <div className="w-full xl:w-1/2 h-full">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          className="w-full xl:w-1/2 h-full"
+        >
           <div className="relative  grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="w-full md:max-w-sm p-6 border-opacity-50 border-white rounded-xl shadow border-2">
               <div className="flex justify-start">
