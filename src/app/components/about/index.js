@@ -12,7 +12,7 @@ const index = () => {
       <div className="flex justify-center md:justify-between flex-wrap md:flex-nowrap items-center gap-0 md:gap-28">
         <div className="w-1/2">
           <div
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
@@ -28,7 +28,7 @@ const index = () => {
           </div>
         </div>
         <div
-          data-aos="fade-right"
+          data-aos="fade-left"
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"

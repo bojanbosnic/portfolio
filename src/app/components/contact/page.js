@@ -3,9 +3,16 @@ import React, { useState } from "react";
 import { fadeIn } from "@/app/animations";
 
 const Index = () => {
-  const [inputValue, setInputValue] = useState("");
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
+  const [inputValue, setInputValue] = useState({
+    firstName: "",
+    lastName: "",
+  });
+
+  const handleInputChange = (value, vr) => {
+    setInputValue((prevState) => ({
+      ...prevState,
+      [vr]: value,
+    }));
   };
 
   const handleInputBlur = () => {
@@ -44,14 +51,14 @@ const Index = () => {
                 type="text"
                 className="z-10 border-b py-1 focus:outline-none"
                 autoComplete="off"
-                value={inputValue}
-                onChange={handleInputChange}
+                value={inputValue.firstName || ""}
+                onChange={(e) => handleInputChange(e.target.value, "firstName")}
                 onBlur={handleInputBlur}
               />
               <label
                 htmlFor="name_id"
                 className={`absolute left-0 top-1  transition-transform ${
-                  inputValue ? "-translate-y-6 text-sm" : ""
+                  inputValue.firstName ? "-translate-y-6 text-sm" : ""
                 }`}
               >
                 Your Name
@@ -65,14 +72,16 @@ const Index = () => {
                   name="user_email"
                   className="z-10 border-b py-1 focus:outline-none"
                   autoComplete="off"
-                  value={inputValue}
-                  onChange={() => setInputValue(e.target.value)}
+                  value={inputValue.lastName}
+                  onChange={(e) =>
+                    handleInputChange(e.target.value, "lastName")
+                  }
                   onBlur={handleInputBlur}
                 />
                 <label
                   htmlFor="email_id"
                   className={`absolute left-0 top-1  transition-transform ${
-                    inputValue ? "-translate-y-6 text-sm" : ""
+                    inputValue.lastName ? "-translate-y-6 text-sm" : ""
                   }`}
                 >
                   Your Email{" "}
