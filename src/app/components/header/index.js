@@ -25,7 +25,7 @@ const Index = () => {
               global impact. Welcome to my digital space, where where code meets
               creativity!
             </p>
-            <a href="../../assets/cv/Bojan-CV.pdf" download target="_blank">
+            <a href="@/assets/cv/bojan-cv.pdf" download target="_blank">
               <button type="button" class="w-full btn  lg:w-4/12">
                 Download Cv{" "}
               </button>
