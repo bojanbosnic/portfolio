@@ -1,7 +1,5 @@
 import React from "react";
 import Image from "next/image";
-// import { fadeIn } from "../../animations";
-// import { motion } from "framer-motion";
 import myself from "../../../../assets/img/bojan.png";
 
 const Index = () => {
