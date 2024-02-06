@@ -5,7 +5,7 @@ import "./projects_style.scss";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/app/animations";
 import img from "../../../../assets/img/portfolio-img1.png";
-
+import seasonal from "../../../../assets/img/seasonal-img.png";
 const index = () => {
   return (
     <div
@@ -31,7 +31,7 @@ const index = () => {
         <div className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat">
           <div className="relative rounded-xl h-80 overflow-hidden bg-cover bg-no-repeat">
             <Image
-              src={img.src} // Zamijenjte sa stvarnom putanjom do slike
+              src={seasonal.src} // Zamijenjte sa stvarnom putanjom do slike
               alt="Opis slike"
               layout="fill"
               objectFit="cover"
@@ -42,7 +42,7 @@ const index = () => {
             <div className="absolute -bottom-full left-16 group-hover:bottom-10 transition-all duration-700 z-40">
               <span className="font-medium">Sezonac</span>
             </div>
-            <a href="https://sezonac-web.vercel.app/" target="_blank">
+            <a href="https://seasonal-peach.vercel.app/" target="_blank">
               <div className="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
           </div>
@@ -52,9 +52,9 @@ const index = () => {
         <div className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat">
           <div className="relative rounded-xl h-80 overflow-hidden bg-cover bg-no-repeat">
             <Image
-              src={img.src} // Zamijenjte sa stvarnom putanjom do slike
+              src={img.src}
               alt="Opis slike"
-              layout="fill" // Postavite layout na 'fill'
+              layout="fill"
               objectFit="cover"
             />
             <div className="absolute -bottom-full left-16 group-hover:bottom-20 transition-all duration-500 z-40">
@@ -74,9 +74,9 @@ const index = () => {
         <div className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat">
           <div className="relative rounded-xl h-80 overflow-hidden bg-cover bg-no-repeat">
             <Image
-              src={img.src} // Zamijenjte sa stvarnom putanjom do slike
+              src={img.src}
               alt="Opis slike"
-              layout="fill" // Postavite layout na 'fill'
+              layout="fill"
               objectFit="cover"
             />
             <div className="absolute -bottom-full left-16 group-hover:bottom-20 transition-all duration-500 z-40">

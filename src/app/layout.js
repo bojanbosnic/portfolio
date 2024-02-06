@@ -3,7 +3,6 @@ import "./globals.css";
 import React, { useEffect } from "react";
 import Navigation from "../app/components/navigation/index";
 import Contact from "../app/components/contact_tape/index";
-import Footer from "../app/components/footer/index";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { orbitron, rajdhani, aldrich } from "../../assets/fonts/fonts";
