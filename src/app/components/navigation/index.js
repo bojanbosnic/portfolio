@@ -18,7 +18,6 @@ const Index = () => {
           <li className="my-6 text-white/50">
             <Link
               to="home"
-              // onClick={scrollToTop}
               spy={true}
               smooth={true}
               offset={-300}
