@@ -12,12 +12,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    AOS.init({
-      delay: 200,
-      duration: 500,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     delay: 200,
+  //     duration: 500,
+  //   });
+  // }, []);
   return (
     <html
       lang="en"
