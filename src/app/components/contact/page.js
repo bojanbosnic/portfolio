@@ -6,6 +6,7 @@ const Index = () => {
   const [inputValue, setInputValue] = useState({
     firstName: "",
     lastName: "",
+    msg: "",
   });
 
   const handleInputChange = (value, vr) => {
@@ -49,7 +50,7 @@ const Index = () => {
                 id="name_id"
                 name="user_name"
                 type="text"
-                className="z-10 border-b py-1 focus:outline-none"
+                className="relative z-10 border-b py-1 focus:outline-none"
                 autoComplete="off"
                 value={inputValue.firstName || ""}
                 onChange={(e) => handleInputChange(e.target.value, "firstName")}
@@ -57,7 +58,7 @@ const Index = () => {
               />
               <label
                 htmlFor="name_id"
-                className={`absolute left-0 top-1  transition-transform ${
+                className={`absolute left-0 top-1 z--10  transition-transform ${
                   inputValue.firstName ? "-translate-y-6 text-sm" : ""
                 }`}
               >
@@ -70,7 +71,7 @@ const Index = () => {
                   id="email_id"
                   type="email"
                   name="user_email"
-                  className="z-10 border-b py-1 focus:outline-none"
+                  className="relative z-10 border-b py-1 focus:outline-none"
                   autoComplete="off"
                   value={inputValue.lastName}
                   onChange={(e) =>
@@ -80,7 +81,7 @@ const Index = () => {
                 />
                 <label
                   htmlFor="email_id"
-                  className={`absolute left-0 top-1  transition-transform ${
+                  className={`absolute left-0 top-1 z--10  transition-transform ${
                     inputValue.lastName ? "-translate-y-6 text-sm" : ""
                   }`}
                 >
@@ -93,9 +94,19 @@ const Index = () => {
                 <textarea
                   id="msg_id"
                   name="user_message"
-                  placeholder="Your Message"
+                  className="relative z-10"
+                  value={inputValue.msg}
+                  onChange={(e) => handleInputChange(e.target.value, "msg")}
+                  onBlur={handleInputBlur}
                 />
-                <label htmlFor="msg_id"></label>
+                <label
+                  className={`absolute left-0 top-5 z--10  transition-transform ${
+                    inputValue.msg ? "-translate-y-6 text-sm" : ""
+                  }`}
+                  htmlFor="msg_id"
+                >
+                  Your Message
+                </label>
               </div>
             </div>
             <button type="submit" className="w-full btn px-12 lg:w-1/2 my-8">

@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       delay: 200,
       duration: 500,
     });
-  });
+  }, []);
   return (
     <html
       lang="en"
