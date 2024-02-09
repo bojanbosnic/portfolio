@@ -23,10 +23,13 @@ const Index = () => {
               global impact. Welcome to my digital space, where where code meets
               creativity!
             </p>
-            <a href="@/assets/cv/bojan-cv.pdf" download target="_blank">
-              <button type="button" class="w-full btn  lg:w-4/12">
-                Download Cv{" "}
-              </button>
+            <a
+              href="../../../../assets/cv/bojan-cv.pdf"
+              download
+              class="w-full btn lg:w-4/12"
+              target="_blank"
+            >
+              Download CV
             </a>
           </div>
           <div

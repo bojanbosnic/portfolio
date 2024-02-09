@@ -5,7 +5,9 @@ import "./projects_style.scss";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/app/animations";
 import img from "../../../../assets/img/portfolio-img1.png";
-import seasonal from "../../../../assets/img/seasonal-img.png";
+import seasonal from "../../../../assets/img/seasonal.png";
+import skondra from "../../../../assets/img/skondra.png";
+import gis from "../../../../assets/img/gis.png";
 const index = () => {
   return (
     <div
@@ -52,7 +54,7 @@ const index = () => {
         <div className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat">
           <div className="relative rounded-xl h-80 overflow-hidden bg-cover bg-no-repeat">
             <Image
-              src={img.src}
+              src={skondra.src}
               alt="Opis slike"
               layout="fill"
               objectFit="cover"
@@ -74,7 +76,7 @@ const index = () => {
         <div className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat">
           <div className="relative rounded-xl h-80 overflow-hidden bg-cover bg-no-repeat">
             <Image
-              src={img.src}
+              src={gis.src}
               alt="Opis slike"
               layout="fill"
               objectFit="cover"

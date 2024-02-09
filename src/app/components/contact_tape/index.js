@@ -33,7 +33,7 @@ const index = () => {
           <HiOutlineMail fontSize={20} />
         </a>
         <a
-          href="https://www.linkedin.com/in/bojan-bosnic1204/"
+          href="https://www.facebook.com/bojanbosnic1204/"
           target="_blank"
           rel="noreferrer"
           className="mr-4 hover:text-accent transition-all ease-in-out"

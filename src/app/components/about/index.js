@@ -5,6 +5,7 @@ import React from "react";
 import me from "../../../../assets/img/aboutme-img.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/app/animations";
+import Link from "next/link";
 
 const index = () => {
   return (
@@ -44,7 +45,12 @@ const index = () => {
             I'm also passionate about exploring new technologies which I can
             leverage to solve real-life problems.
           </p>
-          <button className="btn w-full lg:w-4/12">Contact Me</button>
+          <a
+            className="btn w-full lg:w-4/12"
+            href="mailto:bojan.bosnicc99@gmail.com"
+          >
+            Contact Me
+          </a>
         </div>
       </div>
     </div>
