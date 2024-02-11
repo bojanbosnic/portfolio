@@ -1,6 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { fadeIn } from "@/app/animations";
+import emailjs from "@emailjs/browser";
 
 const Index = () => {
   const [inputValue, setInputValue] = useState({
@@ -8,6 +9,25 @@ const Index = () => {
     lastName: "",
     msg: "",
   });
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_cn97iam", "template_lqo3esf", form.current, {
+        publicKey: "k2a1SOpU9u-aFnEHj",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
 
   const handleInputChange = (value, vr) => {
     setInputValue((prevState) => ({
@@ -44,7 +64,11 @@ const Index = () => {
           viewport={{ once: false, amount: 0.7 }}
           className="w-full md:w-1/2"
         >
-          <form className="z-10 flex  px-4 flex-col outline-0 pb-8 pt-4  bg-transparent border border-cyan-100 rounded-lg md:mt-0">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="z-10 flex  px-4 flex-col outline-0 pb-8 pt-4  bg-transparent border border-cyan-100 rounded-lg md:mt-0"
+          >
             <div className="relative my-6">
               <input
                 id="name_id"

@@ -30,8 +30,8 @@ const index = () => {
             these cutting-edge technologies."
           </p>
         </div>
-        <div className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat">
-          <div className="relative rounded-xl h-80 overflow-hidden bg-cover bg-no-repeat">
+        <div className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-contain bg-no-repeat">
+          <div className="relative rounded-xl h-80 overflow-hidden bg-contain bg-no-repeat">
             <Image
               src={seasonal.src} // Zamijenjte sa stvarnom putanjom do slike
               alt="Opis slike"
@@ -39,7 +39,7 @@ const index = () => {
               objectFit="cover"
             />
             <div className="absolute -bottom-full left-16 group-hover:bottom-20 transition-all duration-500 z-40">
-              <span className="text-gradient">UI/UX Design</span>
+              <span className="text-gradient">Frontend Development</span>
             </div>
             <div className="absolute -bottom-full left-16 group-hover:bottom-10 transition-all duration-700 z-40">
               <span className="font-medium">Seasonal App</span>
@@ -51,7 +51,7 @@ const index = () => {
         </div>
       </div>
       <div className="flex flex-wrap justify-center md:flex-nowrap md:justify-between gap-8 md:gap-16">
-        <div className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat">
+        <div className=" w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat">
           <div className="relative rounded-xl h-80 overflow-hidden bg-cover bg-no-repeat">
             <Image
               src={skondra.src}
@@ -60,7 +60,7 @@ const index = () => {
               objectFit="cover"
             />
             <div className="absolute -bottom-full left-16 group-hover:bottom-20 transition-all duration-500 z-40">
-              <span className="text-gradient">UI/UX Design</span>
+              <span className="text-gradient">Frontend Development</span>
             </div>
             <div className="absolute -bottom-full left-16 group-hover:bottom-10 transition-all duration-700 z-40">
               <span className="font-medium">Skondra Portfolio</span>
@@ -82,7 +82,7 @@ const index = () => {
               objectFit="cover"
             />
             <div className="absolute -bottom-full left-16 group-hover:bottom-20 transition-all duration-500 z-40">
-              <span className="text-gradient">UI/UX Design</span>
+              <span className="text-gradient">Frontend Development</span>
             </div>
             <div className="absolute -bottom-full left-16 group-hover:bottom-10 transition-all duration-700 z-40">
               <span className="font-medium">GIS App</span>

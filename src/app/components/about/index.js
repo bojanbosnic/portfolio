@@ -1,13 +1,26 @@
 "use client";
+import React, { useRef } from "react";
 import Image from "next/image";
 import "./about_style.css";
-import React from "react";
 import me from "../../../../assets/img/aboutme-img.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/app/animations";
 import Link from "next/link";
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 
 const index = () => {
+  const onButtonClick = () => {
+    // const pdfUrl = "../../../../assets/cv/bojan-cv.pdf";
+
+    const pdfUrl = "../../../../assets/cv/bojan-cv.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "document.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div id="about" className="container mx-auto">
       <div className="flex justify-center md:justify-between flex-wrap md:flex-nowrap items-center gap-0 md:gap-28">
@@ -45,12 +58,9 @@ const index = () => {
             I'm also passionate about exploring new technologies which I can
             leverage to solve real-life problems.
           </p>
-          <a
-            className="btn w-full lg:w-4/12"
-            href="mailto:bojan.bosnicc99@gmail.com"
-          >
+          <button onClick={onButtonClick} className="btn w-full lg:w-4/12">
             Contact Me
-          </a>
+          </button>
         </div>
       </div>
     </div>
