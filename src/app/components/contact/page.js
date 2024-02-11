@@ -21,6 +21,11 @@ const Index = () => {
       })
       .then(
         () => {
+          setInputValue({
+            firstName: "",
+            lastName: "",
+            msg: "",
+          });
           console.log("SUCCESS!");
         },
         (error) => {
