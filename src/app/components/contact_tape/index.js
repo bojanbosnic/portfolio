@@ -4,8 +4,7 @@ import Link from "next/link";
 import { BsTelephone, BsFillTelephoneFill } from "react-icons/bs";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-// import { motion } from "framer-motion";
-// import { fadeIn } from "../../animations";
+import { FaGithub } from "react-icons/fa";
 
 const index = () => {
   return (
@@ -31,6 +30,12 @@ const index = () => {
           className="mr-4 hover:text-accent transition-all ease-in-out"
         >
           <HiOutlineMail fontSize={20} />
+        </a>
+        <a
+          href="https://github.com/bojanbosnic"
+          className="mr-4 hover:text-accent transition-all ease-in-out"
+        >
+          <FaGithub fontSize={20} />
         </a>
         <a
           href="https://www.facebook.com/bojanbosnic1204/"

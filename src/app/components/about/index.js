@@ -58,9 +58,12 @@ const index = () => {
             I'm also passionate about exploring new technologies which I can
             leverage to solve real-life problems.
           </p>
-          <button onClick={onButtonClick} className="btn w-full lg:w-4/12">
+          <a
+            href="mailto:bojan.bosnicc99@gmail.com"
+            className="btn w-full lg:w-4/12"
+          >
             Contact Me
-          </button>
+          </a>
         </div>
       </div>
     </div>
