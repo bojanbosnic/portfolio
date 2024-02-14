@@ -2,6 +2,7 @@
 import React, { useState, useRef } from "react";
 import { fadeIn } from "@/app/animations";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 const Index = () => {
   const [inputValue, setInputValue] = useState({
@@ -48,9 +49,9 @@ const Index = () => {
   };
   console.log(!!inputValue);
   return (
-    <div id="contact" className="container mx-auto">
+    <div id="contact" className="container mx-auto overflow-x-hidden">
       <div className="flex flex-wrap justify-between items-center gap-20 my-24 md:my-44 md:flex-nowrap">
-        <div
+        <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView={"show"}
@@ -61,8 +62,8 @@ const Index = () => {
           <span className="text-6xl w-full md:max-w-xs block font-medium text-center md:text-left">
             Let's work together!
           </span>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
           variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView={"show"}
@@ -142,26 +143,10 @@ const Index = () => {
               Send Message
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
 };
 
 export default Index;
-{
-  /* <div class="relative">
-  <input
-  type="text"
-  id="username"
-  class="border-b py-1 focus:outline-none focus:border-purple-600 focus:border-b-2 transition-colors peer"
-  autocomplete="off"
-  />
-  <label
-  for="username"
-  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-purple-600 transition-all"
-  >
-    Username
-  </label>
-// </div>; */
-}

@@ -8,14 +8,15 @@ import img from "../../../../assets/img/portfolio-img1.png";
 import seasonal from "../../../../assets/img/seasonal.png";
 import skondra from "../../../../assets/img/skondra.png";
 import gis from "../../../../assets/img/gis.png";
+
 const index = () => {
   return (
     <div
       id="projects"
-      className="container mx-auto flex flex-col my-24 gap-8 md:my-44 md:gap-16"
+      className="container mx-auto flex flex-col my-24 gap-8 md:my-44 md:gap-16 overflow-x-hidden"
     >
       <div className="flex flex-wrap items-center md:flex-nowrap gap-8 md:gap-16">
-        <div
+        <motion.div
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"show"}
@@ -29,8 +30,14 @@ const index = () => {
             optimal performance, I'm ready to bring your projects to life using
             these cutting-edge technologies."
           </p>
-        </div>
-        <div className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-contain bg-no-repeat">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-contain bg-no-repeat"
+        >
           <div className="relative rounded-xl h-80 overflow-hidden bg-contain bg-no-repeat">
             <Image
               src={seasonal.src} // Zamijenjte sa stvarnom putanjom do slike
@@ -48,10 +55,16 @@ const index = () => {
               <div className="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="flex flex-wrap justify-center md:flex-nowrap md:justify-between gap-8 md:gap-16">
-        <div className=" w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat">
+        <motion.div
+          variants={fadeIn("right", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className=" w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat"
+        >
           <div className="relative rounded-xl h-80 overflow-hidden bg-cover bg-no-repeat">
             <Image
               src={skondra.src}
@@ -72,8 +85,14 @@ const index = () => {
               <div className="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
           </div>
-        </div>
-        <div className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat"
+        >
           <div className="relative rounded-xl h-80 overflow-hidden bg-cover bg-no-repeat">
             <Image
               src={gis.src}
@@ -91,7 +110,7 @@ const index = () => {
               <div className="group-hover:bg-black/70 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed transition duration-300 ease-in-out hover:opacity-100"></div>
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

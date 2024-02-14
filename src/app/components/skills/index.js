@@ -1,20 +1,21 @@
 "use client";
 import React from "react";
 import "./skills_style.scss";
-// import { motion } from "framer-motion";
-// import { fadeIn } from "@/app/animations";
-import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
-import { FaReact, FaSass } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/app/animations";
 
 const index = () => {
   return (
-    <div id="skills" className="container mx-auto my-24 md:my-44">
+    <div
+      id="skills"
+      className="container mx-auto my-24 md:my-44 overflow-x-hidden"
+    >
       <div className="flex flex-wrap justify-center items-center md:flex-nowrap md:justify-between gap-16">
-        <div
-          data-aos="fade-right"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+        <motion.div
+          variants={fadeIn("right", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
           className="w-full md:w-1/2 text-center md:text-left"
         >
           <h3>Skills</h3>
@@ -27,12 +28,12 @@ const index = () => {
             applications. I also excel in project coordination and effective
             teamwork.
           </p>
-        </div>
-        <div
-          data-aos="fade-left"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
           className="w-full xl:w-1/2 h-full"
         >
           <div className="relative  grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -79,7 +80,7 @@ const index = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

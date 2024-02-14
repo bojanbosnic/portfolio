@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/app/animations";
 import { BsTelephone, BsFillTelephoneFill } from "react-icons/bs";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -8,21 +10,21 @@ import { FaGithub } from "react-icons/fa";
 
 const index = () => {
   return (
-    <div className="container mx-auto flex justify-between items-center mt-10 mb-24">
-      <div
-        data-aos="fade-right"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
+    <div className="container mx-auto flex justify-between items-center mt-10 mb-24 overflow-x-hidden">
+      <motion.div
+        variants={fadeIn("right", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
         className="font-primary"
       >
         <span className="tracking-widest text-gradient">Portfolio.</span>
-      </div>
-      <div
-        data-aos="fade-left"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
+      </motion.div>
+      <motion.div
+        variants={fadeIn("left", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
         className="flex items-center"
       >
         <a
@@ -59,7 +61,7 @@ const index = () => {
         >
           <BsFillTelephoneFill />
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 };

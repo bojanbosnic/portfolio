@@ -1,17 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import myself from "../../../../assets/img/bojan.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/app/animations";
 
 const Index = () => {
   return (
-    <header id="home">
-      <div className="container mx-auto my-24 md:my-44">
+    <header id="home" className="overflow-x-hidden">
+      <div className="container mx-auto my-24 md:my-24">
         <div className="flex flex-wrap justify-center md:flex-nowrap md:justify-between gap-20 md:items-center">
-          <div
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+          <motion.div
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
           >
             <span className="block mb-2">Hello there!</span>
             <h1>
@@ -24,19 +26,19 @@ const Index = () => {
               creativity!
             </p>
             <a
-              href="../../../../assets/cv/bojan-cv.pdf"
-              download
-              class="w-full btn lg:w-4/12"
-              target="_blank"
+              href="/bojan.pdf"
+              className="w-full btn lg:w-4/12"
+              rel="noopener noreferrer"
+              download="bojan"
             >
               Download CV
             </a>
-          </div>
-          <div
-            data-aos="fade-left"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+          </motion.div>
+          <motion.div
+            variants={fadeIn("left", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
             className="mt-16 md:mt-0 hidden md:block"
           >
             <Image
@@ -46,7 +48,7 @@ const Index = () => {
               height={400}
               alt="Bojan Img"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </header>

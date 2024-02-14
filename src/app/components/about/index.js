@@ -5,31 +5,17 @@ import "./about_style.css";
 import me from "../../../../assets/img/aboutme-img.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/app/animations";
-import Link from "next/link";
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
 
 const index = () => {
-  const onButtonClick = () => {
-    // const pdfUrl = "../../../../assets/cv/bojan-cv.pdf";
-
-    const pdfUrl = "../../../../assets/cv/bojan-cv.pdf";
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "document.pdf"; // specify the filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
   return (
-    <div id="about" className="container mx-auto">
+    <div id="about" className="container mx-auto overflow-x-hidden">
       <div className="flex justify-center md:justify-between flex-wrap md:flex-nowrap items-center gap-0 md:gap-28">
         <div className="w-1/2">
-          <div
-            data-aos="fade-right"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+          <motion.div
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
             className="flex items-center justify-center  my-7 md:my-14"
           >
             <Image
@@ -39,13 +25,13 @@ const index = () => {
               src={me.src}
               alt="Bojan's image"
             />
-          </div>
+          </motion.div>
         </div>
-        <div
-          data-aos="fade-left"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
           className="text-center md:text-left"
         >
           <h3>About Me</h3>
@@ -64,7 +50,7 @@ const index = () => {
           >
             Contact Me
           </a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
