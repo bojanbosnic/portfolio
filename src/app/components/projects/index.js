@@ -5,9 +5,9 @@ import "./projects_style.scss";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/app/animations";
 import img from "../../../../assets/img/portfolio-img1.png";
-import seasonal from "../../../../assets/img/seasonal.png";
+import seasonal from "../../../../assets/img/seasonal.jpg";
 import skondra from "../../../../assets/img/skondra-rad.jpg";
-import gis from "../../../../assets/img/gis.png";
+import gis from "../../../../assets/img/gis.jpg";
 
 const index = () => {
   return (

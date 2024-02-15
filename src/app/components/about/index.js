@@ -8,8 +8,8 @@ import { fadeIn } from "@/app/animations";
 
 const index = () => {
   return (
-    <div id="about" className="container mx-auto overflow-x-hidden">
-      <div className="flex justify-center md:justify-between flex-wrap md:flex-nowrap items-center gap-0 md:gap-28">
+    <div id="about" className="container mx-auto">
+      <div className="flex justify-center md:justify-between flex-wrap md:flex-nowrap items-center gap-0 md:gap-28 overflow-hidden">
         <div className="w-1/2">
           <motion.div
             variants={fadeIn("right", 0.4)}
