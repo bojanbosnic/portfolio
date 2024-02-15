@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/app/animations";
 import img from "../../../../assets/img/portfolio-img1.png";
 import seasonal from "../../../../assets/img/seasonal.png";
-import skondra from "../../../../assets/img/skondra.png";
+import skondra from "../../../../assets/img/skondra-rad.jpg";
 import gis from "../../../../assets/img/gis.png";
 
 const index = () => {
@@ -20,7 +20,7 @@ const index = () => {
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="w-full text-center md:text-left md:w-1/2"
         >
           <h3>My latest work</h3>
@@ -35,7 +35,7 @@ const index = () => {
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-contain bg-no-repeat"
         >
           <div className="relative rounded-xl h-80 overflow-hidden bg-contain bg-no-repeat">
@@ -62,7 +62,7 @@ const index = () => {
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className=" w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat"
         >
           <div className="relative rounded-xl h-80 overflow-hidden bg-cover bg-no-repeat">
@@ -90,7 +90,7 @@ const index = () => {
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="w-full group relative border-2 rounded-xl border-white/50 md:w-1/2 overflow-hidden bg-cover bg-no-repeat"
         >
           <div className="relative rounded-xl h-80 overflow-hidden bg-cover bg-no-repeat">

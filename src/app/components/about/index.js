@@ -15,7 +15,7 @@ const index = () => {
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             className="flex items-center justify-center  my-7 md:my-14"
           >
             <Image
@@ -31,7 +31,7 @@ const index = () => {
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="text-center md:text-left"
         >
           <h3>About Me</h3>

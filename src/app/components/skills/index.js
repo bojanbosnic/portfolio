@@ -15,7 +15,7 @@ const index = () => {
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="w-full md:w-1/2 text-center md:text-left"
         >
           <h3>Skills</h3>
@@ -33,7 +33,7 @@ const index = () => {
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="w-full xl:w-1/2 h-full"
         >
           <div className="relative  grid grid-cols-1 md:grid-cols-2 gap-5">

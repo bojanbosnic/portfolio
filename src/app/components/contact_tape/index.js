@@ -15,7 +15,7 @@ const index = () => {
         variants={fadeIn("right", 0.4)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.7 }}
         className="font-primary"
       >
         <span className="tracking-widest text-gradient">Portfolio.</span>
@@ -24,7 +24,7 @@ const index = () => {
         variants={fadeIn("left", 0.4)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.7 }}
         className="flex items-center"
       >
         <a

@@ -13,7 +13,7 @@ const Index = () => {
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
           >
             <span className="block mb-2">Hello there!</span>
             <h1>
@@ -38,7 +38,7 @@ const Index = () => {
             variants={fadeIn("left", 0.4)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             className="mt-16 md:mt-0 hidden md:block"
           >
             <Image
