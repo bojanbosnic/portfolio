@@ -8,15 +8,15 @@ import { fadeIn } from "@/app/animations";
 
 const index = () => {
   return (
-    <div id="about" className="container mx-auto pb-36">
-      <div className="flex justify-center md:justify-between flex-wrap md:flex-nowrap items-center gap-0 md:gap-28 overflow-hidden">
+    <div id="about" className="container mx-auto pb-16">
+      <div className="flex pb-20 md:pb-36 justify-center md:justify-between flex-wrap md:flex-nowrap items-center gap-0 md:gap-28 overflow-hidden">
         <div className="w-1/2">
           <motion.div
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
-            className="flex items-center justify-center  my-7 md:my-14"
+            className="flex items-center justify-center"
           >
             <Image
               class=""

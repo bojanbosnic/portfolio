@@ -50,7 +50,7 @@ const Index = () => {
   console.log(!!inputValue);
   return (
     <div id="contact" className="container mx-auto overflow-x-hidden">
-      <div className="flex flex-wrap justify-between items-center gap-20 my-24 md:my-44 md:flex-nowrap">
+      <div className="flex flex-wrap justify-between items-center gap-20 md:flex-nowrap">
         <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
