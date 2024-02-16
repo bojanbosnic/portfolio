@@ -14,8 +14,8 @@ const Index = () => {
   return (
     <div className="fixed z-50 w-full md:w-14 bottom-2 right-0 md:bottom-0 md:top-1/3 md:right-4">
       <nav className="px-3.5 my-4 border-none border-white bg-black/20 backdrop-blur-xl rounded-3xl items-center z-40">
-        <ul className="flex flex-row justify-evenly md:flex-col md:justify-center p-0 items-center list-none ">
-          <li className="my-6 text-white/50">
+        <ul className="[&>*]:my-6 text-white/50 flex flex-row justify-evenly md:flex-col md:justify-center p-0 items-center list-none ">
+          <li className="">
             <Link
               to="home"
               spy={true}
@@ -29,7 +29,7 @@ const Index = () => {
               <AiFillHome fontSize={22} />
             </Link>
           </li>
-          <li className="my-6 text-white/50">
+          <li className="">
             <Link
               to="about"
               spy={true}
@@ -43,7 +43,7 @@ const Index = () => {
               <FaUser fontSize={22} />
             </Link>
           </li>
-          <li className="my-6 text-white/50">
+          <li className="">
             <Link
               to="skills"
               spy={true}
@@ -57,7 +57,7 @@ const Index = () => {
               <BsGearFill fontSize={22} />
             </Link>
           </li>
-          <li className="my-6 text-white/50">
+          <li className="">
             <Link
               to="projects"
               spy={true}
@@ -71,7 +71,7 @@ const Index = () => {
               <MdWork fontSize={22} />
             </Link>
           </li>
-          <li className="my-6 text-white/50">
+          <li className="">
             <Link
               to="contact"
               spy={true}

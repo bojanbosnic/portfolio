@@ -7,7 +7,7 @@ import { fadeIn } from "@/app/animations";
 const Index = () => {
   return (
     <header id="home" className="overflow-x-hidden">
-      <div className="container mx-auto my-24 md:my-24">
+      <div className="container mx-auto pt-10 pb-36">
         <div className="flex flex-wrap justify-center md:flex-nowrap md:justify-between gap-20 md:items-center">
           <motion.div
             variants={fadeIn("up", 0.4)}

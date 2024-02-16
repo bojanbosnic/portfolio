@@ -13,7 +13,7 @@ const index = () => {
   return (
     <div
       id="projects"
-      className="container mx-auto flex flex-col my-24 gap-8 md:my-44 md:gap-16 overflow-x-hidden"
+      className="container mx-auto flex flex-col pb-36 gap-8 md:gap-16 overflow-x-hidden"
     >
       <div className="flex flex-wrap items-center md:flex-nowrap gap-8 md:gap-16">
         <motion.div

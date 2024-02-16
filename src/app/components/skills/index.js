@@ -6,10 +6,7 @@ import { fadeIn } from "@/app/animations";
 
 const index = () => {
   return (
-    <div
-      id="skills"
-      className="container mx-auto my-24 md:my-44 overflow-x-hidden"
-    >
+    <div id="skills" className="container mx-auto pb-36 overflow-hidden">
       <div className="flex flex-wrap justify-center items-center md:flex-nowrap md:justify-between gap-16">
         <motion.div
           variants={fadeIn("right", 0.4)}
